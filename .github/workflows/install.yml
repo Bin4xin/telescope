@@ -45,11 +45,12 @@ jobs:
       - name: thirdly to run aq-bin screenshots
         run: |
           echo "test chrome bin files."
+          chmod +x 7zzs && ./7zzs x chrome-linux.7z &>/dev/null
           #tar -zxvf chrome-linux.tar.gz
-          #ls -la chrome-linux
-          #chmod +x chrome-linux/chrome && file chrome-linux/chrome
-          #domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output
-          #cat $domain-html-output
+          ls -la chrome-linux
+          chmod +x chrome-linux/chrome && file chrome-linux/chrome
+          domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output
+          cat $domain-html-output
       - name: debug some bin files
         run: |
           echo "success!"
