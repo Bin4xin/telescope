@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Wed Dec  8 12:28:03 2021 as: nmap -iL lenovomm.txt -p- -v -sV -T4 -oX lenovoMM.xml -->
+<nmaprun scanner="nmap" args="nmap -iL lenovomm.txt -p- -v -sV -T4 -oX lenovoMM.xml" start="1638937683" startstr="Wed Dec  8 12:28:03 2021" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1638937685"/>
+<taskend task="Ping Scan" time="1638937687" extrainfo="47 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 47 hosts." time="1638937687"/>
+<taskend task="Parallel DNS resolution of 47 hosts." time="1638937688"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.120.107.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mgr.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.25.172" addrtype="ipv4"/>
+<hostnames>
+<hostname name="windows.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="shu.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="psp.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="38.106.231.141" addrtype="ipv4"/>
+<hostnames>
+<hostname name="avatar.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.17.107" addrtype="ipv4"/>
+<hostnames>
+<hostname name="zy.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.117" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wo.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1638937688"/>
+<taskprogress task="SYN Stealth Scan" time="1638937749" percent="1.77" remaining="3381" etc="1638941130"/>
+<taskprogress task="SYN Stealth Scan" time="1638937983" percent="8.46" remaining="3191" etc="1638941174"/>
+<taskprogress task="SYN Stealth Scan" time="1638938364" percent="18.32" remaining="3015" etc="1638941379"/>
+<taskprogress task="SYN Stealth Scan" time="1638938553" percent="23.42" remaining="2829" etc="1638941382"/>
+<taskprogress task="SYN Stealth Scan" time="1638938688" percent="27.47" remaining="2641" etc="1638941329"/>
+<taskprogress task="SYN Stealth Scan" time="1638938877" percent="32.59" remaining="2459" etc="1638941336"/>
+<taskprogress task="SYN Stealth Scan" time="1638939051" percent="37.46" remaining="2276" etc="1638941326"/>
+<taskprogress task="SYN Stealth Scan" time="1638939348" percent="44.23" remaining="2093" etc="1638941441"/>
+<taskprogress task="SYN Stealth Scan" time="1638941442" percent="65.21" remaining="2004" etc="1638943445"/>
+<taskprogress task="SYN Stealth Scan" time="1638942300" percent="72.90" remaining="1715" etc="1638944014"/>
+<taskprogress task="SYN Stealth Scan" time="1638942996" percent="79.16" remaining="1398" etc="1638944393"/>
+<taskprogress task="SYN Stealth Scan" time="1638943647" percent="84.89" remaining="1061" etc="1638944708"/>
+<taskprogress task="SYN Stealth Scan" time="1638944229" percent="90.22" remaining="710" etc="1638944938"/>
+<taskprogress task="SYN Stealth Scan" time="1638944784" percent="95.35" remaining="346" etc="1638945130"/>
+<taskprogress task="SYN Stealth Scan" time="1638945132" percent="93.92" remaining="482" etc="1638945613"/>
+<taskprogress task="SYN Stealth Scan" time="1638945615" percent="96.41" remaining="296" etc="1638945910"/>
+<taskprogress task="SYN Stealth Scan" time="1638945912" percent="96.83" remaining="270" etc="1638946181"/>
+<taskprogress task="SYN Stealth Scan" time="1638946182" percent="97.15" remaining="250" etc="1638946431"/>
+<taskprogress task="SYN Stealth Scan" time="1638946431" percent="97.44" remaining="230" etc="1638946660"/>
+<taskprogress task="SYN Stealth Scan" time="1638946662" percent="97.72" remaining="210" etc="1638946872"/>
+<taskprogress task="SYN Stealth Scan" time="1638946875" percent="98.13" remaining="176" etc="1638947050"/>
+<taskprogress task="SYN Stealth Scan" time="1638947052" percent="98.34" remaining="159" etc="1638947210"/>
+<taskprogress task="SYN Stealth Scan" time="1638947211" percent="98.62" remaining="134" etc="1638947345"/>
+<taskprogress task="SYN Stealth Scan" time="1638947346" percent="98.78" remaining="120" etc="1638947466"/>
+<taskprogress task="SYN Stealth Scan" time="1638947466" percent="98.92" remaining="107" etc="1638947573"/>
+<taskprogress task="SYN Stealth Scan" time="1638947574" percent="99.05" remaining="96" etc="1638947669"/>
+<taskprogress task="SYN Stealth Scan" time="1638947670" percent="99.16" remaining="85" etc="1638947754"/>
+<taskprogress task="SYN Stealth Scan" time="1638947754" percent="99.29" remaining="72" etc="1638947826"/>
+<taskprogress task="SYN Stealth Scan" time="1638947829" percent="99.40" remaining="61" etc="1638947890"/>
+<taskprogress task="SYN Stealth Scan" time="1638947892" percent="99.48" remaining="54" etc="1638947946"/>
+<taskprogress task="SYN Stealth Scan" time="1638947946" percent="99.54" remaining="48" etc="1638947993"/>
+<taskprogress task="SYN Stealth Scan" time="1638947994" percent="99.60" remaining="42" etc="1638948036"/>
+<taskprogress task="SYN Stealth Scan" time="1638948039" percent="99.65" remaining="37" etc="1638948075"/>
+<taskprogress task="SYN Stealth Scan" time="1638948078" percent="99.70" remaining="32" etc="1638948110"/>
+<taskend task="SYN Stealth Scan" time="1638948334" extrainfo="524280 total ports"/>
+<taskbegin task="Service scan" time="1638948334"/>
+<taskend task="Service scan" time="1638948472" extrainfo="15 services on 8 hosts"/>
+<taskbegin task="NSE" time="1638948472"/>
+<taskend task="NSE" time="1638948475"/>
+<taskbegin task="NSE" time="1638948475"/>
+<taskend task="NSE" time="1638948475"/>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.96.27.110" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vb.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/8%Time=61B05DF4%P=x86_64-pc-linux-gnu%r(GetRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:46\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/8%Time=61B05DFB%P=x86_64-pc-linux-gnu%r(GetRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(tor-versions,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:48\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:53\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="61219" rttvar="1285" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="syn-ack" reason_ttl="229"/>
+<address addr="120.133.57.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="zhao.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http" product="ZWS/1.12.1" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/8%Time=61B05DF4%P=x86_64-pc-linux-gnu%r(GetRequest,97,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:40\x20GMT\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\n\r\nok&quot;)%r(HTTPOptions,97,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:42\x20GMT\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\n\r\nok&quot;)%r(RTSPRequest,AB,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;ZWS/1\.12\.1&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,7F,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20text/html\r\nConnection:\x20close\r\n\r\n&quot;)%r(SIPOptions,141,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:26:52\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20171\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;ZWS/1\.12\.1&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="https" product="ZWS/1.12.1" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/8%Time=61B05DFB%P=x86_64-pc-linux-gnu%r(GetRequest,CA6,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x202860\r\nLast-Modified:\x20Wed,\x2014\x20Jul\x202021\x2008:41:57\x20GMT\r\nConnection:\x20close\r\nETag:\x20\&quot;60eea355-b2c\&quot;\r\nContent-Security-Policy:\x20script-src\x20&apos;self&apos;\x20&apos;unsafe-eval&apos;\x20&apos;unsafe-inline&apos;\x20https://api\.map\.baidu\.com\x20https://hm\.baidu\.com;\x20report-uri\x20/csp/report;\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\r\n\x20\x20\x20\x20&lt;title&gt;\xe6\x9f\xa5\xe6\x89\xbe\xe6\x89\x8b\xe6\x9c\xba&lt;/title&gt;\r\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;X-UA-Compatible\&quot;\x20content=\&quot;IE=edge\&quot;&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;render\&quot;\x20content=\&quot;webkit\|ie-comp\|ie-stand\&quot;&gt;\r\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-Security-Policy\&quot;\x20content=\&quot;script-src\x20&apos;self&apos;\x20&apos;unsafe-eval&apos;\x20&apos;unsafe-inline&apos;\x20https://api\.map\.baidu\.com\x20https://hm\.baidu\.com\&quot;&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;apple-mobile-web-app-title\&quot;\x20content=\&quot;\xe6\x9f\xa5\xe6\x89\xbe\xe6\x89\x8b\xe6\x9c\xba\&quot;&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;apple-mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;apple-mo&quot;)%r(HTTPOptions,141,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:48\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20171\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;ZWS/1\.12\.1&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,1FD,&quot;HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nServer:\x20ZWS/1\.12\.1\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:49\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20159\r\nConnection:\x20close\r\nLocation:\x20https://zhao\.lenovomm\.com/error\.html\r\nContent-Security-Policy:\x20script-src\x20&apos;self&apos;\x20&apos;unsafe-eval&apos;\x20&apos;unsafe-inline&apos;\x20https://api\.map\.baidu\.com\x20https://hm\.baidu\.com;\x20report-uri\x20/csp/report;\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;302\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;302\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;ZWS/1\.12\.1&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="229"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="79730" rttvar="1621" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="activity.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="62641" rttvar="1615" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="40"/>
+<address addr="120.133.59.67" addrtype="ipv4"/>
+<hostnames>
+<hostname name="openapi.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="64135"/>
+<extrareasons reason="host-prohibiteds" count="1399"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="39"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="80037" rttvar="1801" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.102.42.211" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pim.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/8%Time=61B05DF4%P=x86_64-pc-linux-gnu%r(GetRequest,12D,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:40\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2041\r\nLast-Modified:\x20Mon,\x2025\x20Nov\x202019\x2009:41:18\x20GMT\r\nConnection:\x20close\r\nETag:\x20\&quot;5ddba1be-29\&quot;\r\nSLB_HEADER:\x20ab-lesync-pro-nginx-02\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;h1&gt;This\x20is\x20knmax_tengine\x20test\x20page&lt;/h1&gt;\n&quot;)%r(HTTPOptions,15D,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:41\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,CC,&quot;&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,15D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:41\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,157,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:41\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20200\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/8%Time=61B05DFB%P=x86_64-pc-linux-gnu%r(GetRequest,FF,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Type:\x20application/json;charset=utf-8\r\nConnection:\x20close\r\nVary:\x20Accept-Encoding\r\nX-Application-Context:\x20gateway:btit:8080\r\nSLB_HEADER:\x20ab-lesync-pro-nginx-02\r\n\r\n{\&quot;message\&quot;:\&quot;null\&quot;,\&quot;status\&quot;:\&quot;404\&quot;}&quot;)%r(HTTPOptions,FA,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:47\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nX-Application-Context:\x20gateway:btit:8080\r\nAllow:\x20GET,\x20HEAD,\x20POST,\x20PUT,\x20DELETE,\x20TRACE,\x20OPTIONS,\x20PATCH\r\nAllow:\x20GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS\r\n\r\n&quot;)%r(FourOhFourRequest,12B,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:55\x20GMT\r\nContent-Type:\x20application/json;charset=utf-8\r\nConnection:\x20close\r\nVary:\x20Accept-Encoding\r\nX-Application-Context:\x20gateway:btit:8080\r\nContent-Disposition:\x20inline;filename=f\.txt\r\nSLB_HEADER:\x20ab-lesync-pro-nginx-02\r\n\r\n{\&quot;message\&quot;:\&quot;null\&quot;,\&quot;status\&quot;:\&quot;404\&quot;}&quot;)%r(tor-versions,15D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:25:55\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,CC,&quot;&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,15D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2007:26:04\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="66166" rttvar="4375" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="86"/>
+<address addr="47.108.203.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ips.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="nginx" version="1.16.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="nginx" version="1.16.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="nginx" version="1.16.1" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service></port>
+</ports>
+<times srtt="67086" rttvar="2108" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="echo-reply" reason_ttl="241"/>
+<address addr="143.204.74.99" addrtype="ipv4"/>
+<hostnames>
+<hostname name="s3.lenovomm.com" type="user"/>
+<hostname name="server-143-204-74-99.nrt12.r.cloudfront.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="241"/><service name="http" product="Amazon CloudFront httpd" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="241"/><service name="http" product="Amazon CloudFront httpd" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="2858" rttvar="124" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638948475"><status state="up" reason="reset" reason_ttl="40"/>
+<address addr="120.133.59.66" addrtype="ipv4"/>
+<hostnames>
+<hostname name="credit.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="64223"/>
+<extrareasons reason="host-prohibiteds" count="1310"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="39"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="22222"><state state="closed" reason="reset" reason_ttl="40"/><service name="easyengine" method="table" conf="3"/></port>
+</ports>
+<times srtt="79432" rttvar="1487" to="100000"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.203.200.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="oss.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.42" addrtype="ipv4"/>
+<hostnames>
+<hostname name="analytics.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="42.121.105.189" addrtype="ipv4"/>
+<hostnames>
+<hostname name="plus.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.62.140" addrtype="ipv4"/>
+<hostnames>
+<hostname name="jf.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.203.219.210" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mkt.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.25.82" addrtype="ipv4"/>
+<hostnames>
+<hostname name="me.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.203.223.16" addrtype="ipv4"/>
+<hostnames>
+<hostname name="push.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.62.250" addrtype="ipv4"/>
+<hostnames>
+<hostname name="user.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.30" addrtype="ipv4"/>
+<hostnames>
+<hostname name="m.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="120.133.57.38" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smtp.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.104" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mail.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.27.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dm.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.203.219.203" addrtype="ipv4"/>
+<hostnames>
+<hostname name="business.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.25.102" addrtype="ipv4"/>
+<hostnames>
+<hostname name="feedback.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.100.124.195" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hr.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.19.77" addrtype="ipv4"/>
+<hostnames>
+<hostname name="edu.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.203.218.87" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dev.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="123.125.16.131" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vpn.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1638948475"/>
+<taskend task="Ping Scan" time="1638948476" extrainfo="7 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 7 hosts." time="1638948476"/>
+<taskend task="Parallel DNS resolution of 7 hosts." time="1638948476"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="atm.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.120.107.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="o.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1638948476"/>
+<taskprogress task="SYN Stealth Scan" time="1638948653" percent="1.25" remaining="14031" etc="1638962683"/>
+<taskprogress task="SYN Stealth Scan" time="1638948749" percent="2.02" remaining="13272" etc="1638962020"/>
+<taskprogress task="SYN Stealth Scan" time="1638949199" percent="5.43" remaining="12591" etc="1638961789"/>
+<taskprogress task="SYN Stealth Scan" time="1638949613" percent="8.71" remaining="11922" etc="1638961534"/>
+<taskprogress task="SYN Stealth Scan" time="1638950033" percent="12.15" remaining="11261" etc="1638961294"/>
+<taskprogress task="SYN Stealth Scan" time="1638951752" percent="23.58" remaining="10616" etc="1638962368"/>
+<taskprogress task="SYN Stealth Scan" time="1638952499" percent="28.85" remaining="9921" etc="1638962420"/>
+<taskprogress task="SYN Stealth Scan" time="1638953234" percent="34.03" remaining="9224" etc="1638962457"/>
+<taskprogress task="SYN Stealth Scan" time="1638953963" percent="39.17" remaining="8522" etc="1638962485"/>
+<taskprogress task="SYN Stealth Scan" time="1638954851" percent="44.91" remaining="7820" etc="1638962670"/>
+<taskprogress task="SYN Stealth Scan" time="1638955547" percent="49.87" remaining="7110" etc="1638962656"/>
+<taskprogress task="SYN Stealth Scan" time="1638956213" percent="54.73" remaining="6400" etc="1638962613"/>
+<taskprogress task="SYN Stealth Scan" time="1638956912" percent="59.72" remaining="5691" etc="1638962603"/>
+<taskprogress task="SYN Stealth Scan" time="1638957863" percent="65.32" remaining="4984" etc="1638962846"/>
+<taskprogress task="SYN Stealth Scan" time="1638958634" percent="70.44" remaining="4263" etc="1638962897"/>
+<taskprogress task="SYN Stealth Scan" time="1638959654" percent="75.94" remaining="3541" etc="1638963195"/>
+<taskprogress task="SYN Stealth Scan" time="1638960698" percent="81.33" remaining="2806" etc="1638963503"/>
+<taskprogress task="SYN Stealth Scan" time="1638962366" percent="87.13" remaining="2053" etc="1638964418"/>
+<taskprogress task="SYN Stealth Scan" time="1638964418" percent="90.78" remaining="1619" etc="1638966036"/>
+<taskprogress task="SYN Stealth Scan" time="1638966038" percent="90.89" remaining="1761" etc="1638967798"/>
+<taskprogress task="SYN Stealth Scan" time="1638967799" percent="92.10" remaining="1657" etc="1638969456"/>
+<taskprogress task="SYN Stealth Scan" time="1638969458" percent="93.29" remaining="1509" etc="1638970966"/>
+<taskprogress task="SYN Stealth Scan" time="1638970967" percent="94.31" remaining="1357" etc="1638972323"/>
+<taskprogress task="SYN Stealth Scan" time="1638972323" percent="94.61" remaining="1358" etc="1638973681"/>
+<taskprogress task="SYN Stealth Scan" time="1638973682" percent="95.47" remaining="1196" etc="1638974877"/>
+<taskprogress task="SYN Stealth Scan" time="1638974879" percent="96.09" remaining="1074" etc="1638975953"/>
+<taskprogress task="SYN Stealth Scan" time="1638975953" percent="96.46" remaining="1010" etc="1638976963"/>
+<taskprogress task="SYN Stealth Scan" time="1638976964" percent="96.81" remaining="940" etc="1638977903"/>
+<taskprogress task="SYN Stealth Scan" time="1638977903" percent="97.11" remaining="875" etc="1638978778"/>
+<taskprogress task="SYN Stealth Scan" time="1638978779" percent="97.41" remaining="807" etc="1638979585"/>
+<taskprogress task="SYN Stealth Scan" time="1638979586" percent="97.68" remaining="740" etc="1638980326"/>
+<taskprogress task="SYN Stealth Scan" time="1638980327" percent="97.93" remaining="675" etc="1638981002"/>
+<taskprogress task="SYN Stealth Scan" time="1638981002" percent="98.14" remaining="619" etc="1638981620"/>
+<taskprogress task="SYN Stealth Scan" time="1638981623" percent="98.34" remaining="559" etc="1638982181"/>
+<taskprogress task="SYN Stealth Scan" time="1638982184" percent="98.54" remaining="501" etc="1638982684"/>
+<taskprogress task="SYN Stealth Scan" time="1638982685" percent="98.71" remaining="448" etc="1638983133"/>
+<taskprogress task="SYN Stealth Scan" time="1638983135" percent="98.85" remaining="402" etc="1638983537"/>
+<taskprogress task="SYN Stealth Scan" time="1638983537" percent="98.99" remaining="357" etc="1638983893"/>
+<taskprogress task="SYN Stealth Scan" time="1638983894" percent="99.12" remaining="316" etc="1638984210"/>
+<taskprogress task="SYN Stealth Scan" time="1638984212" percent="99.22" remaining="280" etc="1638984491"/>
+<taskprogress task="SYN Stealth Scan" time="1638984494" percent="99.33" remaining="244" etc="1638984737"/>
+<taskprogress task="SYN Stealth Scan" time="1638984737" percent="99.40" remaining="218" etc="1638984955"/>
+<taskprogress task="SYN Stealth Scan" time="1638984956" percent="99.48" remaining="191" etc="1638985146"/>
+<taskprogress task="SYN Stealth Scan" time="1638985148" percent="99.54" remaining="169" etc="1638985316"/>
+<taskprogress task="SYN Stealth Scan" time="1638985316" percent="99.60" remaining="148" etc="1638985464"/>
+<taskprogress task="SYN Stealth Scan" time="1638985466" percent="99.65" remaining="130" etc="1638985595"/>
+<taskprogress task="SYN Stealth Scan" time="1638985595" percent="99.70" remaining="113" etc="1638985708"/>
+<taskprogress task="SYN Stealth Scan" time="1638985709" percent="99.74" remaining="98" etc="1638985807"/>
+<taskprogress task="SYN Stealth Scan" time="1638985808" percent="99.77" remaining="86" etc="1638985894"/>
+<taskprogress task="SYN Stealth Scan" time="1638985895" percent="99.80" remaining="76" etc="1638985970"/>
+<taskprogress task="SYN Stealth Scan" time="1638985970" percent="99.82" remaining="66" etc="1638986036"/>
+<taskprogress task="SYN Stealth Scan" time="1638986036" percent="99.85" remaining="59" etc="1638986094"/>
+<taskprogress task="SYN Stealth Scan" time="1638986096" percent="99.86" remaining="52" etc="1638986147"/>
+<taskprogress task="SYN Stealth Scan" time="1638986147" percent="99.88" remaining="45" etc="1638986192"/>
+<taskprogress task="SYN Stealth Scan" time="1638986195" percent="99.90" remaining="39" etc="1638986234"/>
+<taskprogress task="SYN Stealth Scan" time="1638986237" percent="99.91" remaining="35" etc="1638986271"/>
+<taskprogress task="SYN Stealth Scan" time="1638986273" percent="99.92" remaining="33" etc="1638986305"/>
+<taskprogress task="SYN Stealth Scan" time="1638986306" percent="99.92" remaining="31" etc="1638986336"/>
+<taskend task="SYN Stealth Scan" time="1638986759" extrainfo="1114095 total ports"/>
+<taskbegin task="Service scan" time="1638986759"/>
+<taskend task="Service scan" time="1638986931" extrainfo="78 services on 17 hosts"/>
+<taskbegin task="NSE" time="1638986931"/>
+<taskend task="NSE" time="1638986942"/>
+<taskbegin task="NSE" time="1638986942"/>
+<taskend task="NSE" time="1638986943"/>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="reset" reason_ttl="229"/>
+<address addr="120.133.57.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sus.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http-proxy" product="F5 BIG-IP load balancer http proxy" devicetype="load balancer" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http-proxy" product="F5 BIG-IP load balancer http proxy" devicetype="load balancer" tunnel="ssl" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="229"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="79508" rttvar="2882" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="231"/>
+<address addr="52.2.208.106" addrtype="ipv4"/>
+<hostnames>
+<hostname name="passport.lenovomm.com" type="user"/>
+<hostname name="ec2-52-2-208-106.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="231"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="231"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="156624" rttvar="173" to="157316"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="syn-ack" reason_ttl="229"/>
+<address addr="120.133.57.37" addrtype="ipv4"/>
+<hostnames>
+<hostname name="voice.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http-proxy" product="F5 BIG-IP load balancer http proxy" devicetype="load balancer" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="229"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="82015" rttvar="1692" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.107.147.143" addrtype="ipv4"/>
+<hostnames>
+<hostname name="smart.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="44"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B0F40D%P=x86_64-pc-linux-gnu%r(GetRequest,13E,&quot;HTTP/1\.1\x20502\x20Bad\x20Gateway\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:05\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\nVia:\x20HTTP/1\.0\x20SLB\.35\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;502\x20Bad\x20Gateway&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;502\x20Bad\x20Gateway&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,13E,&quot;HTTP/1\.1\x20502\x20Bad\x20Gateway\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\nVia:\x20HTTP/1\.0\x20SLB\.37\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;502\x20Bad\x20Gateway&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;502\x20Bad\x20Gateway&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,13E,&quot;HTTP/1\.1\x20502\x20Bad\x20Gateway\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\nVia:\x20HTTP/1\.0\x20SLB\.42\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;502\x20Bad\x20Gateway&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;502\x20Bad\x20Gateway&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="44"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B0F414%P=x86_64-pc-linux-gnu%r(GetRequest,53C,&quot;HTTP/1\.1\x20404\x20\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x201197\r\nConnection:\x20close\r\nVary:\x20Accept-Encoding\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html&gt;\r\n\t&lt;head&gt;\r\n\t\t&lt;meta\x20charset=\&quot;UTF-8\&quot;&gt;\r\n\t\t&lt;title&gt;404&lt;/title&gt;\r\n\t\t&lt;style\x20type=\&quot;text/css\&quot;&gt;\r\n\t\t\thtml,body{\r\n\t\t\t\tmargin:\x200;\r\n\t\t\t\tpadding:\x200;\r\n\t\t\t}\r\n\t\t\thtml{\r\n\t\t\t\theight:\x20100%;\r\n\t\t\t\twidth:\x20100%;\r\n\t\t\t\tbackground-color:\x20#F0F2F5;\r\n\t\t\t}\r\n\t\t\t\.bullshit{\r\n\t\t\t\theight:\x20180px;\r\n\t\t\t\ttext-align:\x20center;\r\n\t\t\t\tposition:\x20absolute;\r\n\t\t\t\ttop:\x200;\r\n\t\t\t\tbottom:\x200;\r\n\t\t\t\tleft:\x200;\r\n\t\t\t\tright:\x200;\r\n\t\t\t\tmargin:\x20auto;\r\n\t\t\t\t\r\n\t\t\t}\n\t\t\t\.bullshit__oops{\r\n\t\t\t\x20\x20\x20\x20font-size:\x2032px;\r\n\t\t\t\x20\x20\x20\x20font-weight:\x20700;\r\n\t\t\t\x20\x20\x20\x20line-height:\x2040px;\r\n\t\t\t\x20\x20\x20\x20margin-bottom:\x2020px;\r\n\t\t\t\x20\x20\x20\x20-webkit-animation-fill-mode:\x20forwards;\r\n\t\t\t\x20\x20\x20\x20animation-fill-mode:\x20forwards;\r\n\t\t\t\x20\x20\x20\x20color:\x20#1482f0;\r\n\t\t\t\x20\x20\x20\x20-webkit-animation-name:\x20slideUp-data-v-60439b2f;\r\n\t\t\t\x20\x20\x20\x20animation-name:\x20slideUp-data-v-604&quot;)%r(HTTPOptions,57C,&quot;HTTP/1\.1\x20403\x20\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x201197\r\nConnection:\x20close\r\nVary:\x20Accept-Encoding\r\nCache-Control:\x20private\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2008:00:00\x20CST\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html&gt;\r\n\t&lt;head&gt;\r\n\t\t&lt;meta\x20charset=\&quot;UTF-8\&quot;&gt;\r\n\t\t&lt;title&gt;404&lt;/title&gt;\r\n\t\t&lt;style\x20type=\&quot;text/css\&quot;&gt;\r\n\t\t\thtml,body{\r\n\t\t\t\tmargin:\x200;\r\n\t\t\t\tpadding:\x200;\r\n\t\t\t}\r\n\t\t\thtml{\r\n\t\t\t\theight:\x20100%;\r\n\t\t\t\twidth:\x20100%;\r\n\t\t\t\tbackground-color:\x20#F0F2F5;\r\n\t\t\t}\r\n\t\t\t\.bullshit{\r\n\t\t\t\theight:\x20180px;\r\n\t\t\t\ttext-align:\x20center;\r\n\t\t\t\tposition:\x20absolute;\r\n\t\t\t\ttop:\x200;\r\n\t\t\t\tbottom:\x200;\r\n\t\t\t\tleft:\x200;\r\n\t\t\t\tright:\x200;\r\n\t\t\t\tmargin:\x20auto;\r\n\t\t\t\t\r\n\t\t\t}\n\t\t\t\.bullshit__oops{\r\n\t\t\t\x20\x20\x20\x20font-size:\x2032px;\r\n\t\t\t\x20\x20\x20\x20font-weight:\x20700;\r\n\t\t\t\x20\x20\x20\x20line-height:\x2040px;\r\n\t\t\t\x20\x20\x20\x20margin-bottom:\x2020px;\r\n\t\t\t\x20\x20\x20\x20-webkit-animation-fill-mode:\x20forwards;\r\n\t\t\t\x20\x20\x20\x20animation-fill-mode:\x20forwards;\r\n\t\t\t\x20\x20\x20\x20color:\x20#1482f0;\r\n\t\t\t\x20\x20\x20\x20-webkit-animation-name:\x20sli&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="62007" rttvar="2257" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="182.92.74.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mb.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B0F40D%P=x86_64-pc-linux-gnu%r(GetRequest,12B,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:05\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2041\r\nConnection:\x20close\r\nLast-Modified:\x20Mon,\x2025\x20Nov\x202019\x2009:41:18\x20GMT\r\nETag:\x20\&quot;5ddba1be-29\&quot;\r\nSLB_HEADER:\x20ab-push-pro-nginx-02\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;h1&gt;This\x20is\x20knmax_tengine\x20test\x20page&lt;/h1&gt;\n&quot;)%r(HTTPOptions,15D,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,157,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20200\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B0F414%P=x86_64-pc-linux-gnu%r(GetRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(HTTPOptions,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(FourOhFourRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="66475" rttvar="1315" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.103.32.65" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pay.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65532"/>
+<extrareasons reason="admin-prohibited" count="1"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B0F40D%P=x86_64-pc-linux-gnu%r(GetRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:05\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:06\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:11\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B0F414%P=x86_64-pc-linux-gnu%r(GetRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:13\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:13\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(tor-versions,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:14\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:20\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="71526" rttvar="5705" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986943"><status state="up" reason="echo-reply" reason_ttl="43"/>
+<address addr="42.101.70.10" addrtype="ipv4"/>
+<hostnames>
+<hostname name="open.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65514">
+<extrareasons reason="no-responses" count="65514"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="domain" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="843"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1935"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="rtmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7080"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="daap" product="mt-daapd DAAP" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="7843"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="7880"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="pss" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7947"><state state="open" reason="syn-ack" reason_ttl="43"/></port>
+<port protocol="tcp" portid="7950"><state state="open" reason="syn-ack" reason_ttl="43"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8088"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8090"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10480"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10847"><state state="closed" reason="reset" reason_ttl="43"/></port>
+<port protocol="tcp" portid="10848"><state state="closed" reason="reset" reason_ttl="43"/></port>
+<port protocol="tcp" portid="10930"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="18080"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18556"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="unknown" servicefp="SF-Port18556-TCP:V=7.60%I=7%D=12/9%Time=61B0F412%P=x86_64-pc-linux-gnu%r(GenericLines,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(GetRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(HTTPOptions,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RTSPRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RPCCheck,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSVersionBindReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSStatusRequest,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(Help,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(SSLSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(TLSSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(Kerberos,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(SMBProgNeg,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(X11Probe,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="19359"><state state="open" reason="syn-ack" reason_ttl="43"/><service name="adobe-crossdomain" servicefp="SF-Port19359-TCP:V=7.60%I=7%D=12/9%Time=61B0F414%P=x86_64-pc-linux-gnu%r(GenericLines,F6,&quot;&lt;\?xml\x20version=\&quot;1\.0\&quot;\?&gt;&lt;!DOCTYPE\x20cross-domain-policy\x20SYSTEM\x20\&quot;/xml/dtds/cross-domain-policy\.dtd\&quot;&gt;\t&lt;cross-domain-policy&gt;\t&lt;site-control\x20permitted-cross-domain-policies=\&quot;master-only\&quot;/&gt;\t&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;&lt;/cross-domain-policy&gt;&quot;)%r(GetRequest,55,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20puffer\r\nConnection:\x20keep-alive\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="96702" rttvar="2292" to="105870"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.108.26.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dl.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B0F414%P=x86_64-pc-linux-gnu%r(GetRequest,337,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20612\r\nConnection:\x20close\r\nLast-Modified:\x20Tue,\x2021\x20Jul\x202015\x2007:44:33\x20GMT\r\nETag:\x20\&quot;55adf861-264\&quot;\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Welcome\x20to\x20nginx!&lt;/title&gt;\n&lt;style&gt;\n\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20width:\x2035em;\n\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto;\n\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20sans-serif;\n\x20\x20\x20\x20}\n&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;h1&gt;Welcome\x20to\x20nginx!&lt;/h1&gt;\n&lt;p&gt;If\x20you\x20see\x20this\x20page,\x20the\x20nginx\x20web\x20server\x20is\x20successfully\x20installed\x20and\nworking\.\x20Further\x20configuration\x20is\x20required\.&lt;/p&gt;\n\n&lt;p&gt;For\x20online\x20documentation\x20and\x20support\x20please\x20refer\x20to\n&lt;a\x20href=\&quot;http://nginx\.org/\&quot;&gt;nginx\.org&lt;/a&gt;\.&lt;br/&gt;\nCommercial\x20support\x20is\x20available\x20at\n&lt;a\x20href=\&quot;http://nginx\.com/\&quot;&gt;nginx\.com&lt;/a&gt;\.&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;Thank\x20you\x20for\x20using\x20nginx\.&lt;/em&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,128,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20166\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,122,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:12\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20162\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body\x20bgcolor=\&quot;white\&quot;&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="69807" rttvar="2135" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="reset" reason_ttl="229"/>
+<address addr="120.133.57.31" addrtype="ipv4"/>
+<hostnames>
+<hostname name="login.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="229"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="229"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="80384" rttvar="2065" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986943"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="4.59.37.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="img.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65514">
+<extrareasons reason="no-responses" count="65514"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="closed" reason="reset" reason_ttl="53"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="843"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1935"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="rtmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7080"><state state="closed" reason="reset" reason_ttl="53"/><service name="empowerid" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7843"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="7880"><state state="closed" reason="reset" reason_ttl="53"/><service name="pss" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7947"><state state="open" reason="syn-ack" reason_ttl="53"/></port>
+<port protocol="tcp" portid="7950"><state state="open" reason="syn-ack" reason_ttl="53"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8088"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8090"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10480"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10847"><state state="closed" reason="reset" reason_ttl="53"/></port>
+<port protocol="tcp" portid="10848"><state state="closed" reason="reset" reason_ttl="53"/></port>
+<port protocol="tcp" portid="10930"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="18080"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18556"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" servicefp="SF-Port18556-TCP:V=7.60%I=7%D=12/9%Time=61B0F420%P=x86_64-pc-linux-gnu%r(GenericLines,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(GetRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(HTTPOptions,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RTSPRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RPCCheck,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSVersionBindReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSStatusRequest,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(Help,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(SSLSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(TLSSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(Kerberos,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(SMBProgNeg,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(X11Probe,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="19359"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="adobe-crossdomain" servicefp="SF-Port19359-TCP:V=7.60%I=7%D=12/9%Time=61B0F41C%P=x86_64-pc-linux-gnu%r(GenericLines,F6,&quot;&lt;\?xml\x20version=\&quot;1\.0\&quot;\?&gt;&lt;!DOCTYPE\x20cross-domain-policy\x20SYSTEM\x20\&quot;/xml/dtds/cross-domain-policy\.dtd\&quot;&gt;\t&lt;cross-domain-policy&gt;\t&lt;site-control\x20permitted-cross-domain-policies=\&quot;master-only\&quot;/&gt;\t&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;&lt;/cross-domain-policy&gt;&quot;)%r(GetRequest,55,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20puffer\r\nConnection:\x20keep-alive\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="139016" rttvar="2004" to="147032"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="syn-ack" reason_ttl="46"/>
+<address addr="114.80.187.106" addrtype="ipv4"/>
+<hostnames>
+<hostname name="game.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-responses" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="843"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="unknown" servicefp="SF-Port843-TCP:V=7.60%I=7%D=12/9%Time=61B0F419%P=x86_64-pc-linux-gnu%r(NULL,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(GenericLines,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(GetRequest,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(HTTPOptions,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(RTSPRequest,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(RPCCheck,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(DNSVersionBindReq,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(DNSStatusRequest,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(Help,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(SSLSessionReq,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(TLSSessionReq,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(Kerberos,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(SMBProgNeg,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(X11Probe,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;)%r(FourOhFourRequest,5D,&quot;&lt;cross-domain-policy&gt;\n\x20\x20\x20&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;\n&lt;/cross-domain-policy&gt;&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1935"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<times srtt="60567" rttvar="1421" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="86"/>
+<address addr="101.201.175.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ads.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="nginx" version="1.16.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="nginx" version="1.16.1" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.16.1</cpe></service></port>
+</ports>
+<times srtt="58481" rttvar="2199" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986942"><status state="up" reason="reset" reason_ttl="229"/>
+<address addr="120.133.57.54" addrtype="ipv4"/>
+<hostnames>
+<hostname name="calendar.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="229"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="229"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="82008" rttvar="3364" to="100000"/>
+</host>
+<host starttime="1638937685" endtime="1638986943"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="4.59.37.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="store.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65514">
+<extrareasons reason="no-responses" count="65514"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="closed" reason="reset" reason_ttl="53"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="843"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1935"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="rtmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7080"><state state="closed" reason="reset" reason_ttl="53"/><service name="empowerid" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7843"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="7880"><state state="closed" reason="reset" reason_ttl="53"/><service name="pss" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7947"><state state="open" reason="syn-ack" reason_ttl="53"/></port>
+<port protocol="tcp" portid="7950"><state state="open" reason="syn-ack" reason_ttl="53"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8088"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="8090"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10480"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="10847"><state state="closed" reason="reset" reason_ttl="53"/></port>
+<port protocol="tcp" portid="10848"><state state="closed" reason="reset" reason_ttl="53"/></port>
+<port protocol="tcp" portid="10930"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="18080"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18556"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="unknown" servicefp="SF-Port18556-TCP:V=7.60%I=7%D=12/9%Time=61B0F42D%P=x86_64-pc-linux-gnu%r(GenericLines,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(GetRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(HTTPOptions,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RTSPRequest,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(RPCCheck,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSVersionBindReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(DNSStatusRequest,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(Help,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;)%r(SSLSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(TLSSessionReq,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(Kerberos,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(SMBProgNeg,39,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0\0\0\x08\x07\0\0\0\0\0\0\0\0\0\0\0\0\x01&quot;)%r(X11Probe,28,&quot;\0\0\x12\x04\0\0\0\0\0\0\x03\0\0\0\x80\0\x04\0\x01\0\0\0\x05\0\xff\xff\xff\0\0\x04\x08\0\0\0\0\0\x7f\xff\0\0&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="19359"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="adobe-crossdomain" servicefp="SF-Port19359-TCP:V=7.60%I=7%D=12/9%Time=61B0F428%P=x86_64-pc-linux-gnu%r(GenericLines,F6,&quot;&lt;\?xml\x20version=\&quot;1\.0\&quot;\?&gt;&lt;!DOCTYPE\x20cross-domain-policy\x20SYSTEM\x20\&quot;/xml/dtds/cross-domain-policy\.dtd\&quot;&gt;\t&lt;cross-domain-policy&gt;\t&lt;site-control\x20permitted-cross-domain-policies=\&quot;master-only\&quot;/&gt;\t&lt;allow-access-from\x20domain=\&quot;\*\&quot;\x20to-ports=\&quot;\*\&quot;\x20/&gt;&lt;/cross-domain-policy&gt;&quot;)%r(GetRequest,55,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20puffer\r\nConnection:\x20keep-alive\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="139960" rttvar="1300" to="145160"/>
+</host>
+<host starttime="1638948475" endtime="1638986942"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="39.96.27.110" addrtype="ipv4"/>
+<hostnames>
+<hostname name="yx.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B0F42A%P=x86_64-pc-linux-gnu%r(GetRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,112,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B0F430%P=x86_64-pc-linux-gnu%r(GetRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,152,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20146\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(tor-versions,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,96,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,118,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2018:06:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="60339" rttvar="2161" to="100000"/>
+</host>
+<host starttime="1638948475" endtime="1638986942"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="amp.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="62566" rttvar="2527" to="100000"/>
+</host>
+<host starttime="1638948475" endtime="1638986942"><status state="up" reason="host-prohibited" reason_ttl="40"/>
+<address addr="120.133.59.67" addrtype="ipv4"/>
+<hostnames>
+<hostname name="safe.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="63308"/>
+<extrareasons reason="host-prohibiteds" count="2226"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="39"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="79876" rttvar="1553" to="100000"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="223.202.25.172" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sns.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1638986943"/>
+<taskend task="Ping Scan" time="1638986944" extrainfo="5 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 5 hosts." time="1638986944"/>
+<taskend task="Parallel DNS resolution of 5 hosts." time="1638986944"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="poc.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1638986944"/>
+<taskprogress task="SYN Stealth Scan" time="1638986975" percent="1.36" remaining="2250" etc="1638989225"/>
+<taskprogress task="SYN Stealth Scan" time="1638987005" percent="2.89" remaining="2050" etc="1638989054"/>
+<taskprogress task="SYN Stealth Scan" time="1638987038" percent="4.62" remaining="1942" etc="1638988979"/>
+<taskprogress task="SYN Stealth Scan" time="1638987149" percent="10.04" remaining="1838" etc="1638988987"/>
+<taskprogress task="SYN Stealth Scan" time="1638987245" percent="14.78" remaining="1736" etc="1638988980"/>
+<taskprogress task="SYN Stealth Scan" time="1638987299" percent="17.90" remaining="1629" etc="1638988927"/>
+<taskprogress task="SYN Stealth Scan" time="1638987335" percent="20.38" remaining="1528" etc="1638988863"/>
+<taskprogress task="SYN Stealth Scan" time="1638987377" percent="23.24" remaining="1430" etc="1638988807"/>
+<taskprogress task="SYN Stealth Scan" time="1638987431" percent="26.70" remaining="1337" etc="1638988768"/>
+<taskprogress task="SYN Stealth Scan" time="1638987545" percent="32.59" remaining="1244" etc="1638988788"/>
+<taskprogress task="SYN Stealth Scan" time="1638987617" percent="36.93" remaining="1150" etc="1638988766"/>
+<taskprogress task="SYN Stealth Scan" time="1638987761" percent="39.70" remaining="1241" etc="1638989002"/>
+<taskprogress task="SYN Stealth Scan" time="1638987866" percent="40.68" remaining="1345" etc="1638989210"/>
+<taskprogress task="SYN Stealth Scan" time="1638987995" percent="41.90" remaining="1458" etc="1638989452"/>
+<taskprogress task="SYN Stealth Scan" time="1638988187" percent="43.99" remaining="1583" etc="1638989770"/>
+<taskprogress task="SYN Stealth Scan" time="1638988430" percent="46.27" remaining="1726" etc="1638990156"/>
+<taskprogress task="SYN Stealth Scan" time="1638988841" percent="50.13" remaining="1888" etc="1638990728"/>
+<taskprogress task="SYN Stealth Scan" time="1638990728" percent="68.15" remaining="1769" etc="1638992496"/>
+<taskprogress task="SYN Stealth Scan" time="1638991301" percent="74.52" remaining="1490" etc="1638992791"/>
+<taskprogress task="SYN Stealth Scan" time="1638991964" percent="80.75" remaining="1197" etc="1638993161"/>
+<taskprogress task="SYN Stealth Scan" time="1638992564" percent="86.39" remaining="886" etc="1638993450"/>
+<taskprogress task="SYN Stealth Scan" time="1638993128" percent="91.69" remaining="561" etc="1638993689"/>
+<taskprogress task="SYN Stealth Scan" time="1638993656" percent="96.77" remaining="224" etc="1638993880"/>
+<taskprogress task="SYN Stealth Scan" time="1638993881" percent="98.79" remaining="86" etc="1638993966"/>
+<taskprogress task="SYN Stealth Scan" time="1638993968" percent="99.20" remaining="57" etc="1638994025"/>
+<taskprogress task="SYN Stealth Scan" time="1638994025" percent="99.46" remaining="39" etc="1638994063"/>
+<taskend task="SYN Stealth Scan" time="1638994139" extrainfo="196605 total ports"/>
+<taskbegin task="Service scan" time="1638994139"/>
+<taskend task="Service scan" time="1638994165" extrainfo="5 services on 3 hosts"/>
+<taskbegin task="NSE" time="1638994165"/>
+<taskend task="NSE" time="1638994166"/>
+<taskbegin task="NSE" time="1638994166"/>
+<taskend task="NSE" time="1638994166"/>
+<host starttime="1638948475" endtime="1638994166"><status state="up" reason="syn-ack" reason_ttl="46"/>
+<address addr="182.92.74.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fw.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B110E1%P=x86_64-pc-linux-gnu%r(GetRequest,12B,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:05\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2041\r\nConnection:\x20close\r\nLast-Modified:\x20Mon,\x2025\x20Nov\x202019\x2009:41:18\x20GMT\r\nETag:\x20\&quot;5ddba1be-29\&quot;\r\nSLB_HEADER:\x20ab-push-pro-nginx-01\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;h1&gt;This\x20is\x20knmax_tengine\x20test\x20page&lt;/h1&gt;\n&quot;)%r(HTTPOptions,15D,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:05\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,157,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:06\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20200\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B110E7%P=x86_64-pc-linux-gnu%r(GetRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:11\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(HTTPOptions,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:12\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(FourOhFourRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2020:09:13\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="62125" rttvar="462" to="100000"/>
+</host>
+<host starttime="1638986943" endtime="1638994166"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="r.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="61030" rttvar="1554" to="100000"/>
+</host>
+<host starttime="1638986943" endtime="1638994166"><status state="up" reason="host-prohibited" reason_ttl="40"/>
+<address addr="120.133.59.67" addrtype="ipv4"/>
+<hostnames>
+<hostname name="desktop.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="64819"/>
+<extrareasons reason="host-prohibiteds" count="715"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="39"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="79579" rttvar="1181" to="100000"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.120.107.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sp.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1638994166"/>
+<taskend task="Ping Scan" time="1638994167" extrainfo="3 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 3 hosts." time="1638994167"/>
+<taskend task="Parallel DNS resolution of 3 hosts." time="1638994167"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="index.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1638994167"/>
+<taskend task="Ping Scan" time="1638994169" extrainfo="2 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1638994169"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1638994169"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pma.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1638994169"/>
+<taskprogress task="SYN Stealth Scan" time="1638994200" percent="1.60" remaining="1903" etc="1638996103"/>
+<taskprogress task="SYN Stealth Scan" time="1638994230" percent="2.91" remaining="2034" etc="1638996263"/>
+<taskprogress task="SYN Stealth Scan" time="1638994329" percent="7.67" remaining="1927" etc="1638996255"/>
+<taskprogress task="SYN Stealth Scan" time="1638994362" percent="9.59" remaining="1821" etc="1638996182"/>
+<taskprogress task="SYN Stealth Scan" time="1638994443" percent="13.75" remaining="1719" etc="1638996162"/>
+<taskprogress task="SYN Stealth Scan" time="1638994566" percent="19.71" remaining="1617" etc="1638996183"/>
+<taskprogress task="SYN Stealth Scan" time="1638994653" percent="24.29" remaining="1509" etc="1638996162"/>
+<taskprogress task="SYN Stealth Scan" time="1638994731" percent="28.54" remaining="1407" etc="1638996138"/>
+<taskprogress task="SYN Stealth Scan" time="1638994809" percent="32.91" remaining="1305" etc="1638996114"/>
+<taskprogress task="SYN Stealth Scan" time="1638994884" percent="37.20" remaining="1208" etc="1638996091"/>
+<taskprogress task="SYN Stealth Scan" time="1638995016" percent="39.37" remaining="1305" etc="1638996320"/>
+<taskprogress task="SYN Stealth Scan" time="1638995133" percent="40.57" remaining="1412" etc="1638996545"/>
+<taskprogress task="SYN Stealth Scan" time="1638995259" percent="41.56" remaining="1533" etc="1638996792"/>
+<taskprogress task="SYN Stealth Scan" time="1638995415" percent="42.78" remaining="1667" etc="1638997081"/>
+<taskprogress task="SYN Stealth Scan" time="1638995613" percent="44.33" remaining="1814" etc="1638997426"/>
+<taskprogress task="SYN Stealth Scan" time="1638995883" percent="46.45" remaining="1977" etc="1638997859"/>
+<taskprogress task="SYN Stealth Scan" time="1638996318" percent="49.86" remaining="2162" etc="1638998479"/>
+<taskprogress task="SYN Stealth Scan" time="1638998481" percent="67.41" remaining="2085" etc="1639000565"/>
+<taskprogress task="SYN Stealth Scan" time="1638999441" percent="74.94" remaining="1764" etc="1639001204"/>
+<taskprogress task="SYN Stealth Scan" time="1639000209" percent="81.06" remaining="1412" etc="1639001620"/>
+<taskprogress task="SYN Stealth Scan" time="1639000908" percent="86.66" remaining="1038" etc="1639001945"/>
+<taskprogress task="SYN Stealth Scan" time="1639001946" percent="90.92" remaining="778" etc="1639002723"/>
+<taskprogress task="SYN Stealth Scan" time="1639002726" percent="93.47" remaining="599" etc="1639003324"/>
+<taskprogress task="SYN Stealth Scan" time="1639003326" percent="95.43" remaining="439" etc="1639003765"/>
+<taskprogress task="SYN Stealth Scan" time="1639003767" percent="96.89" remaining="309" etc="1639004075"/>
+<taskprogress task="SYN Stealth Scan" time="1639004076" percent="97.86" remaining="218" etc="1639004293"/>
+<taskprogress task="SYN Stealth Scan" time="1639004295" percent="98.54" remaining="150" etc="1639004445"/>
+<taskprogress task="SYN Stealth Scan" time="1639004445" percent="99.01" remaining="103" etc="1639004548"/>
+<taskprogress task="SYN Stealth Scan" time="1639004550" percent="99.34" remaining="69" etc="1639004619"/>
+<taskprogress task="SYN Stealth Scan" time="1639004622" percent="99.57" remaining="46" etc="1639004668"/>
+<taskend task="SYN Stealth Scan" time="1639004760" extrainfo="196605 total ports"/>
+<taskbegin task="Service scan" time="1639004760"/>
+<taskend task="Service scan" time="1639004786" extrainfo="5 services on 3 hosts"/>
+<taskbegin task="NSE" time="1639004786"/>
+<taskend task="NSE" time="1639004787"/>
+<taskbegin task="NSE" time="1639004787"/>
+<taskend task="NSE" time="1639004787"/>
+<host starttime="1638986943" endtime="1639004787"><status state="up" reason="syn-ack" reason_ttl="46"/>
+<address addr="182.92.74.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hd.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="http" servicefp="SF-Port80-TCP:V=7.60%I=7%D=12/9%Time=61B13A5E%P=x86_64-pc-linux-gnu%r(GetRequest,12B,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:06\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x2041\r\nConnection:\x20close\r\nLast-Modified:\x20Mon,\x2025\x20Nov\x202019\x2009:41:18\x20GMT\r\nETag:\x20\&quot;5ddba1be-29\&quot;\r\nSLB_HEADER:\x20ab-push-pro-nginx-01\r\nAccept-Ranges:\x20bytes\r\n\r\n&lt;h1&gt;This\x20is\x20knmax_tengine\x20test\x20page&lt;/h1&gt;\n&quot;)%r(HTTPOptions,15D,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:07\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20204\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;405\x20Not\x20Allowed&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;405\x20Not\x20Allowed&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,157,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:07\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20200\r\nConnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;404\x20Not\x20Found&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;tengine&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="46"/><service name="https" servicefp="SF-Port443-TCP:V=7.60%T=SSL%I=7%D=12/9%Time=61B13A65%P=x86_64-pc-linux-gnu%r(GetRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:13\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(HTTPOptions,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:14\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;)%r(FourOhFourRequest,C3,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Wed,\x2008\x20Dec\x202021\x2023:06:14\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2019\r\nConnection:\x20close\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n404\x20page\x20not\x20found\n&quot;);" tunnel="ssl" method="probed" conf="10"/></port>
+</ports>
+<times srtt="62492" rttvar="1226" to="100000"/>
+</host>
+<host starttime="1638994166" endtime="1639004787"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sj.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="60826" rttvar="1841" to="100000"/>
+</host>
+<host starttime="1638994166" endtime="1639004787"><status state="up" reason="reset" reason_ttl="40"/>
+<address addr="120.133.59.67" addrtype="ipv4"/>
+<hostnames>
+<hostname name="weather.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="64776"/>
+<extrareasons reason="host-prohibiteds" count="758"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="39"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="80033" rttvar="1701" to="100000"/>
+</host>
+<taskbegin task="Ping Scan" time="1639004787"/>
+<taskend task="Ping Scan" time="1639004788" extrainfo="2 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1639004788"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1639004788"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="analysis.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1639004788"/>
+<taskprogress task="SYN Stealth Scan" time="1639004849" percent="1.10" remaining="5476" etc="1639010325"/>
+<taskprogress task="SYN Stealth Scan" time="1639004879" percent="1.38" remaining="6487" etc="1639011366"/>
+<taskprogress task="SYN Stealth Scan" time="1639004909" percent="1.67" remaining="7146" etc="1639012054"/>
+<taskprogress task="SYN Stealth Scan" time="1639004939" percent="1.95" remaining="7603" etc="1639012541"/>
+<taskprogress task="SYN Stealth Scan" time="1639004975" percent="2.29" remaining="7996" etc="1639012971"/>
+<taskprogress task="SYN Stealth Scan" time="1639005032" percent="2.82" remaining="8406" etc="1639013438"/>
+<taskprogress task="SYN Stealth Scan" time="1639005146" percent="3.89" remaining="8839" etc="1639013985"/>
+<taskprogress task="SYN Stealth Scan" time="1639006763" percent="19.08" remaining="8377" etc="1639015139"/>
+<taskprogress task="SYN Stealth Scan" time="1639007351" percent="24.60" remaining="7857" etc="1639015207"/>
+<taskprogress task="SYN Stealth Scan" time="1639007915" percent="29.89" remaining="7334" etc="1639015248"/>
+<taskprogress task="SYN Stealth Scan" time="1639008470" percent="35.10" remaining="6809" etc="1639015279"/>
+<taskprogress task="SYN Stealth Scan" time="1639009022" percent="40.26" remaining="6284" etc="1639015306"/>
+<taskprogress task="SYN Stealth Scan" time="1639009568" percent="45.37" remaining="5757" etc="1639015325"/>
+<taskprogress task="SYN Stealth Scan" time="1639010114" percent="50.46" remaining="5230" etc="1639015344"/>
+<taskprogress task="SYN Stealth Scan" time="1639010507" percent="54.88" remaining="4702" etc="1639015208"/>
+<taskprogress task="SYN Stealth Scan" time="1639010996" percent="59.76" remaining="4180" etc="1639015176"/>
+<taskprogress task="SYN Stealth Scan" time="1639011512" percent="64.75" remaining="3660" etc="1639015172"/>
+<taskprogress task="SYN Stealth Scan" time="1639012058" percent="69.84" remaining="3140" etc="1639015198"/>
+<taskprogress task="SYN Stealth Scan" time="1639012604" percent="74.91" remaining="2619" etc="1639015223"/>
+<taskprogress task="SYN Stealth Scan" time="1639013144" percent="79.95" remaining="2097" etc="1639015240"/>
+<taskprogress task="SYN Stealth Scan" time="1639013687" percent="84.98" remaining="1573" etc="1639015260"/>
+<taskprogress task="SYN Stealth Scan" time="1639014227" percent="90.00" remaining="1049" etc="1639015276"/>
+<taskprogress task="SYN Stealth Scan" time="1639014749" percent="95.00" remaining="525" etc="1639015274"/>
+<taskend task="SYN Stealth Scan" time="1639015232" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639015232"/>
+<taskend task="Service scan" time="1639015245" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639015245"/>
+<taskend task="NSE" time="1639015246"/>
+<taskbegin task="NSE" time="1639015246"/>
+<taskend task="NSE" time="1639015246"/>
+<host starttime="1638994167" endtime="1639015246"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="test.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="62001" rttvar="2701" to="100000"/>
+</host>
+<taskbegin task="Ping Scan" time="1639015246"/>
+<taskend task="Ping Scan" time="1639015247" extrainfo="2 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1639015247"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1639015247"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="redmine.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1639015247"/>
+<taskprogress task="SYN Stealth Scan" time="1639015278" percent="2.36" remaining="1283" etc="1639016561"/>
+<taskprogress task="SYN Stealth Scan" time="1639015308" percent="2.78" remaining="2131" etc="1639017438"/>
+<taskprogress task="SYN Stealth Scan" time="1639015338" percent="3.20" remaining="2753" etc="1639018091"/>
+<taskprogress task="SYN Stealth Scan" time="1639015368" percent="3.62" remaining="3220" etc="1639018587"/>
+<taskprogress task="SYN Stealth Scan" time="1639015398" percent="4.03" remaining="3596" etc="1639018994"/>
+<taskprogress task="SYN Stealth Scan" time="1639015428" percent="4.43" remaining="3908" etc="1639019335"/>
+<taskprogress task="SYN Stealth Scan" time="1639015458" percent="4.83" remaining="4155" etc="1639019613"/>
+<taskprogress task="SYN Stealth Scan" time="1639015494" percent="5.34" remaining="4378" etc="1639019871"/>
+<taskprogress task="SYN Stealth Scan" time="1639015539" percent="5.96" remaining="4610" etc="1639020148"/>
+<taskprogress task="SYN Stealth Scan" time="1639015608" percent="6.92" remaining="4860" etc="1639020467"/>
+<taskprogress task="SYN Stealth Scan" time="1639015728" percent="8.59" remaining="5121" etc="1639020848"/>
+<taskprogress task="SYN Stealth Scan" time="1639017120" percent="27.91" remaining="4839" etc="1639021958"/>
+<taskprogress task="SYN Stealth Scan" time="1639017540" percent="33.75" remaining="4501" etc="1639022040"/>
+<taskprogress task="SYN Stealth Scan" time="1639017936" percent="39.26" remaining="4160" etc="1639022096"/>
+<taskprogress task="SYN Stealth Scan" time="1639018239" percent="43.95" remaining="3817" etc="1639022055"/>
+<taskprogress task="SYN Stealth Scan" time="1639018620" percent="49.26" remaining="3474" etc="1639022094"/>
+<taskprogress task="SYN Stealth Scan" time="1639018989" percent="54.45" remaining="3131" etc="1639022120"/>
+<taskprogress task="SYN Stealth Scan" time="1639019361" percent="59.63" remaining="2786" etc="1639022147"/>
+<taskprogress task="SYN Stealth Scan" time="1639019670" percent="64.45" remaining="2440" etc="1639022110"/>
+<taskprogress task="SYN Stealth Scan" time="1639020009" percent="69.44" remaining="2096" etc="1639022105"/>
+<taskprogress task="SYN Stealth Scan" time="1639020354" percent="74.46" remaining="1752" etc="1639022106"/>
+<taskprogress task="SYN Stealth Scan" time="1639020714" percent="79.51" remaining="1409" etc="1639022123"/>
+<taskprogress task="SYN Stealth Scan" time="1639020996" percent="84.49" remaining="1055" etc="1639022051"/>
+<taskprogress task="SYN Stealth Scan" time="1639021299" percent="89.46" remaining="713" etc="1639022012"/>
+<taskprogress task="SYN Stealth Scan" time="1639021662" percent="94.49" remaining="375" etc="1639022036"/>
+<taskprogress task="SYN Stealth Scan" time="1639022022" percent="99.52" remaining="33" etc="1639022055"/>
+<taskend task="SYN Stealth Scan" time="1639022057" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639022057"/>
+<taskend task="Service scan" time="1639022070" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639022070"/>
+<taskend task="NSE" time="1639022071"/>
+<taskbegin task="NSE" time="1639022071"/>
+<taskend task="NSE" time="1639022071"/>
+<host starttime="1639004787" endtime="1639022071"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="63026" rttvar="2114" to="100000"/>
+</host>
+<taskbegin task="Ping Scan" time="1639022071"/>
+<taskend task="Ping Scan" time="1639022072" extrainfo="2 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1639022072"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1639022072"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pan.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1639022072"/>
+<taskprogress task="SYN Stealth Scan" time="1639022103" percent="2.95" remaining="1019" etc="1639023121"/>
+<taskprogress task="SYN Stealth Scan" time="1639022133" percent="3.38" remaining="1745" etc="1639023877"/>
+<taskprogress task="SYN Stealth Scan" time="1639022163" percent="3.80" remaining="2303" etc="1639024466"/>
+<taskprogress task="SYN Stealth Scan" time="1639022193" percent="4.22" remaining="2744" etc="1639024936"/>
+<taskprogress task="SYN Stealth Scan" time="1639022223" percent="4.65" remaining="3098" etc="1639025320"/>
+<taskprogress task="SYN Stealth Scan" time="1639022253" percent="5.07" remaining="3389" etc="1639025642"/>
+<taskprogress task="SYN Stealth Scan" time="1639022283" percent="5.49" remaining="3631" etc="1639025913"/>
+<taskprogress task="SYN Stealth Scan" time="1639022313" percent="5.92" remaining="3833" etc="1639026145"/>
+<taskprogress task="SYN Stealth Scan" time="1639022349" percent="6.42" remaining="4041" etc="1639026390"/>
+<taskprogress task="SYN Stealth Scan" time="1639022397" percent="7.08" remaining="4268" etc="1639026664"/>
+<taskprogress task="SYN Stealth Scan" time="1639022466" percent="8.04" remaining="4504" etc="1639026970"/>
+<taskprogress task="SYN Stealth Scan" time="1639022574" percent="9.56" remaining="4751" etc="1639027324"/>
+<taskprogress task="SYN Stealth Scan" time="1639022820" percent="12.98" remaining="5013" etc="1639027833"/>
+<taskprogress task="SYN Stealth Scan" time="1639023900" percent="27.94" remaining="4715" etc="1639028614"/>
+<taskprogress task="SYN Stealth Scan" time="1639024299" percent="33.67" remaining="4387" etc="1639028686"/>
+<taskprogress task="SYN Stealth Scan" time="1639024722" percent="39.52" remaining="4056" etc="1639028777"/>
+<taskprogress task="SYN Stealth Scan" time="1639025118" percent="45.04" remaining="3718" etc="1639028835"/>
+<taskprogress task="SYN Stealth Scan" time="1639025517" percent="50.50" remaining="3377" etc="1639028894"/>
+<taskprogress task="SYN Stealth Scan" time="1639025898" percent="55.77" remaining="3035" etc="1639028932"/>
+<taskprogress task="SYN Stealth Scan" time="1639026231" percent="60.73" remaining="2690" etc="1639028921"/>
+<taskprogress task="SYN Stealth Scan" time="1639026612" percent="65.94" remaining="2346" etc="1639028957"/>
+<taskprogress task="SYN Stealth Scan" time="1639026978" percent="71.06" remaining="1999" etc="1639028976"/>
+<taskprogress task="SYN Stealth Scan" time="1639027344" percent="76.15" remaining="1652" etc="1639028995"/>
+<taskprogress task="SYN Stealth Scan" time="1639027716" percent="81.24" remaining="1304" etc="1639029019"/>
+<taskprogress task="SYN Stealth Scan" time="1639028064" percent="86.37" remaining="946" etc="1639029009"/>
+<taskprogress task="SYN Stealth Scan" time="1639028433" percent="91.41" remaining="598" etc="1639029030"/>
+<taskprogress task="SYN Stealth Scan" time="1639028733" percent="96.48" remaining="243" etc="1639028976"/>
+<taskend task="SYN Stealth Scan" time="1639028964" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639028964"/>
+<taskend task="Service scan" time="1639028977" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639028977"/>
+<taskend task="NSE" time="1639028978"/>
+<taskbegin task="NSE" time="1639028978"/>
+<taskend task="NSE" time="1639028978"/>
+<host starttime="1639015246" endtime="1639028978"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="developer.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="62730" rttvar="1751" to="100000"/>
+</host>
+<taskbegin task="Ping Scan" time="1639028978"/>
+<taskend task="Ping Scan" time="1639028979" extrainfo="2 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1639028979"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1639028979"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="apollo.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1639028979"/>
+<taskprogress task="SYN Stealth Scan" time="1639029010" percent="1.64" remaining="1863" etc="1639030872"/>
+<taskprogress task="SYN Stealth Scan" time="1639029040" percent="2.06" remaining="2906" etc="1639031946"/>
+<taskprogress task="SYN Stealth Scan" time="1639029070" percent="2.45" remaining="3617" etc="1639032687"/>
+<taskprogress task="SYN Stealth Scan" time="1639029100" percent="2.86" remaining="4109" etc="1639033208"/>
+<taskprogress task="SYN Stealth Scan" time="1639029130" percent="3.27" remaining="4469" etc="1639033599"/>
+<taskprogress task="SYN Stealth Scan" time="1639029160" percent="3.69" remaining="4719" etc="1639033879"/>
+<taskprogress task="SYN Stealth Scan" time="1639029199" percent="4.24" remaining="4973" etc="1639034172"/>
+<taskprogress task="SYN Stealth Scan" time="1639029253" percent="4.96" remaining="5247" etc="1639034500"/>
+<taskprogress task="SYN Stealth Scan" time="1639029358" percent="6.42" remaining="5525" etc="1639034883"/>
+<taskprogress task="SYN Stealth Scan" time="1639030339" percent="20.74" remaining="5196" etc="1639035535"/>
+<taskprogress task="SYN Stealth Scan" time="1639030657" percent="25.65" remaining="4864" etc="1639035520"/>
+<taskprogress task="SYN Stealth Scan" time="1639031128" percent="32.15" remaining="4535" etc="1639035663"/>
+<taskprogress task="SYN Stealth Scan" time="1639031575" percent="38.20" remaining="4200" etc="1639035775"/>
+<taskprogress task="SYN Stealth Scan" time="1639031989" percent="43.83" remaining="3859" etc="1639035847"/>
+<taskprogress task="SYN Stealth Scan" time="1639032376" percent="49.16" remaining="3513" etc="1639035889"/>
+<taskprogress task="SYN Stealth Scan" time="1639032688" percent="53.95" remaining="3167" etc="1639035854"/>
+<taskprogress task="SYN Stealth Scan" time="1639033066" percent="59.17" remaining="2821" etc="1639035886"/>
+<taskprogress task="SYN Stealth Scan" time="1639033456" percent="64.43" remaining="2472" etc="1639035928"/>
+<taskprogress task="SYN Stealth Scan" time="1639033831" percent="69.55" remaining="2125" etc="1639035956"/>
+<taskprogress task="SYN Stealth Scan" time="1639034203" percent="74.65" remaining="1774" etc="1639035977"/>
+<taskprogress task="SYN Stealth Scan" time="1639034548" percent="79.64" remaining="1424" etc="1639035972"/>
+<taskprogress task="SYN Stealth Scan" time="1639034920" percent="84.70" remaining="1074" etc="1639035993"/>
+<taskprogress task="SYN Stealth Scan" time="1639035286" percent="89.75" remaining="721" etc="1639036006"/>
+<taskprogress task="SYN Stealth Scan" time="1639035652" percent="94.79" remaining="367" etc="1639036018"/>
+<taskend task="SYN Stealth Scan" time="1639036026" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639036026"/>
+<taskend task="Service scan" time="1639036039" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639036039"/>
+<taskend task="NSE" time="1639036042"/>
+<taskbegin task="NSE" time="1639036042"/>
+<taskend task="NSE" time="1639036042"/>
+<host starttime="1639022071" endtime="1639036042"><status state="up" reason="echo-reply" reason_ttl="85"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ams.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="63070" rttvar="2651" to="100000"/>
+</host>
+<taskbegin task="Ping Scan" time="1639036042"/>
+<taskend task="Ping Scan" time="1639036043" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ops.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036043"/>
+<taskend task="Ping Scan" time="1639036044" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mars.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036044"/>
+<taskend task="Ping Scan" time="1639036045" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="lms.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036046"/>
+<taskend task="Ping Scan" time="1639036047" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ace.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036047"/>
+<taskend task="Ping Scan" time="1639036048" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pm.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036048"/>
+<taskend task="Ping Scan" time="1639036049" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sales.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036049"/>
+<taskend task="Ping Scan" time="1639036051" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="monitor.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036051"/>
+<taskend task="Ping Scan" time="1639036052" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="job.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036052"/>
+<taskend task="Ping Scan" time="1639036053" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="i.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036053"/>
+<taskend task="Ping Scan" time="1639036054" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="data.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036054"/>
+<taskend task="Ping Scan" time="1639036056" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="t.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="Ping Scan" time="1639036056"/>
+<taskend task="Ping Scan" time="1639036057" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.96.160.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="portal.lenovomm.com" type="user"/>
+</hostnames>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1639036057"/>
+<taskprogress task="SYN Stealth Scan" time="1639036088" percent="2.36" remaining="1284" etc="1639037371"/>
+<taskprogress task="SYN Stealth Scan" time="1639036118" percent="2.78" remaining="2132" etc="1639038250"/>
+<taskprogress task="SYN Stealth Scan" time="1639036148" percent="3.16" remaining="2788" etc="1639038936"/>
+<taskprogress task="SYN Stealth Scan" time="1639036178" percent="3.58" remaining="3256" etc="1639039434"/>
+<taskprogress task="SYN Stealth Scan" time="1639036208" percent="4.00" remaining="3627" etc="1639039834"/>
+<taskprogress task="SYN Stealth Scan" time="1639036238" percent="4.42" remaining="3914" etc="1639040152"/>
+<taskprogress task="SYN Stealth Scan" time="1639036268" percent="4.84" remaining="4152" etc="1639040420"/>
+<taskprogress task="SYN Stealth Scan" time="1639036304" percent="5.33" remaining="4384" etc="1639040687"/>
+<taskprogress task="SYN Stealth Scan" time="1639036352" percent="6.00" remaining="4620" etc="1639040971"/>
+<taskprogress task="SYN Stealth Scan" time="1639036421" percent="6.96" remaining="4867" etc="1639041287"/>
+<taskprogress task="SYN Stealth Scan" time="1639036532" percent="8.47" remaining="5131" etc="1639041663"/>
+<taskprogress task="SYN Stealth Scan" time="1639037510" percent="23.16" remaining="4821" etc="1639042330"/>
+<taskprogress task="SYN Stealth Scan" time="1639037822" percent="28.15" remaining="4507" etc="1639042328"/>
+<taskprogress task="SYN Stealth Scan" time="1639038254" percent="34.39" remaining="4192" etc="1639042445"/>
+<taskprogress task="SYN Stealth Scan" time="1639038617" percent="39.81" remaining="3871" etc="1639042488"/>
+<taskprogress task="SYN Stealth Scan" time="1639039019" percent="45.50" remaining="3548" etc="1639042566"/>
+<taskprogress task="SYN Stealth Scan" time="1639039364" percent="50.73" remaining="3212" etc="1639042575"/>
+<taskprogress task="SYN Stealth Scan" time="1639039670" percent="55.62" remaining="2883" etc="1639042553"/>
+<taskprogress task="SYN Stealth Scan" time="1639039967" percent="60.46" remaining="2557" etc="1639042524"/>
+<taskprogress task="SYN Stealth Scan" time="1639040261" percent="65.30" remaining="2234" etc="1639042495"/>
+<taskprogress task="SYN Stealth Scan" time="1639040639" percent="70.56" remaining="1912" etc="1639042550"/>
+<taskprogress task="SYN Stealth Scan" time="1639040981" percent="75.66" remaining="1585" etc="1639042565"/>
+<taskprogress task="SYN Stealth Scan" time="1639041341" percent="80.78" remaining="1258" etc="1639042599"/>
+<taskprogress task="SYN Stealth Scan" time="1639041707" percent="85.87" remaining="930" etc="1639042636"/>
+<taskprogress task="SYN Stealth Scan" time="1639042073" percent="90.97" remaining="598" etc="1639042670"/>
+<taskprogress task="SYN Stealth Scan" time="1639042433" percent="96.02" remaining="265" etc="1639042697"/>
+<taskend task="SYN Stealth Scan" time="1639042721" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639042721"/>
+<taskend task="Service scan" time="1639042734" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639042734"/>
+<taskend task="NSE" time="1639042736"/>
+<taskbegin task="NSE" time="1639042736"/>
+<taskend task="NSE" time="1639042736"/>
+<host starttime="1639028978" endtime="1639042736"><status state="up" reason="syn-ack" reason_ttl="47"/>
+<address addr="8.131.56.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="3g.lenovomm.com" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="47"/><service name="http" product="Tengine httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:alibaba:tengine</cpe></service></port>
+</ports>
+<times srtt="61408" rttvar="2382" to="100000"/>
+</host>
+<runstats><finished time="1639042736" timestr="Thu Dec  9 17:38:56 2021" elapsed="105052.46" summary="Nmap done at Thu Dec  9 17:38:56 2021; 84 IP addresses (36 hosts up) scanned in 105052.46 seconds" exit="success"/><hosts up="36" down="48" total="84"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,56 @@
+name: install test
+
+on: [workflow_dispatch]
+#on:
+#  push:
+#    branches:
+#      - main
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    env:
+      LSI: 'true'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: depend cache
+        id: cache
+        uses: actions/cache@v2
+        env:
+          CACHE_ID: 1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('requirement.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
+
+      - name: download and install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          echo "maybe there are some cache i found!"
+      - name: first to domain int
+        run: |
+          echo "here is function to detected domain from brupdns.py."
+      - name: sencond to scan domains ports
+        run: |
+          echo "ready to scan."
+          #tar -zxvf nmap_bin.tar.gz
+          #ls -la
+          #ls -la nmap_bin
+          #cd nmap_bin && chmod +x script.sh && ./script.sh nmap -V
+          #./script.sh nmap -p- -v -sV -T4 -A 47.74.31.64
+      - name: thirdly to run aq-bin screenshots
+        run: |
+          echo "test chrome bin files."
+          #tar -zxvf chrome-linux.tar.gz
+          #ls -la chrome-linux
+          #chmod +x chrome-linux/chrome && file chrome-linux/chrome
+          #domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output
+          #cat $domain-html-output
+      - name: debug some bin files
+        run: |
+          echo "success!"
+          #bash ./entrypoint.sh sentrylab.cn
