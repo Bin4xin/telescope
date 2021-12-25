@@ -49,9 +49,26 @@ jobs:
           #tar -zxvf chrome-linux.tar.gz
           ls -la chrome-linux
           chmod +x chrome-linux/chrome && file chrome-linux/chrome
-          domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output
-          cat $domain-html-output
+          domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output && tar -czf attachments.tar.gz $domain-html-output
+          echo "扫描完成，这里是附件" > result.html
       - name: debug some bin files
         run: |
           echo "success!"
           #bash ./entrypoint.sh sentrylab.cn
+      - name: 'Send mail'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.yandex.com
+          server_port: 465
+          #username: ${{ secrets.MAIL_USERNAME }}
+          #password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{secrets.SENTRY_MAIL_USERNAME}}
+          password: ${{secrets.SENTRY_MAIL_PASSWORD}}
+          subject: "您的订阅信息"
+          html_body: file://result.html
+          to: bin4xin.sentrylab@qq.com
+          #cc: chihou.pro@gmail.com
+          #from: 哨兵 -  ${{ env.REPORT_COMMIT }}
+          from: 哨兵
+          content_type: text/html
+          attachments: attachments.tar.gz
