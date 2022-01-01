@@ -34,27 +34,16 @@ jobs:
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
+          bash ./entrypoint.sh sentrylab.cn domains
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
-          #tar -zxvf nmap_bin.tar.gz
-          #ls -la
-          #ls -la nmap_bin
-          #cd nmap_bin && chmod +x script.sh && ./script.sh nmap -V
-          #./script.sh nmap -p- -v -sV -T4 -A 47.74.31.64
+          bash ./entrypoint.sh sentrylab.cn ports
       - name: thirdly to run aq-bin screenshots
         run: |
           echo "test chrome bin files."
-          chmod +x 7zzs && ./7zzs x chrome-linux.7z &>/dev/null
-          #tar -zxvf chrome-linux.tar.gz
-          ls -la chrome-linux
-          chmod +x chrome-linux/chrome && file chrome-linux/chrome
-          domain=sentrylab.cn && cat $domain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out $domain-html-output && tar -czf attachments.tar.gz $domain-html-output
+          bash ./entrypoint.sh sentrylab.cn screens
           echo "扫描完成，这里是附件" > result.html
-      - name: debug some bin files
-        run: |
-          echo "success!"
-          #bash ./entrypoint.sh sentrylab.cn
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
         with:
