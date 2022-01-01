@@ -9,14 +9,17 @@ source ./functions/color_print_fun.sh
 # here to check paragram $searchDomain is valid or not.
 function _domain_checkValid_(){
 # check domain format code: visit https://blog.csdn.net/lyl001234/article/details/111326124
+# grep to check input domain valid or not
 echo $searchDomain | grep -P "^(?=^.{3,255}$)[a-zA-Z0-9\p{Han}][-a-zA-Z0-9\p{Han}]{0,62}(\.[a-zA-Z0-9\p{Han}][-a-zA-Z0-9\p{Han}]{0,62})+$"
 domain_bool_valid=`echo $?`
+
 if [ $domain_bool_valid = "0" ] ; then
 	underline_info_show "here is right domain format."
 else
 	underline_critical_show "[FATAL]: Domain you in put is invalid."
 	exit 0
 fi
+
 # done.
 }
 
@@ -65,6 +68,7 @@ searchDomain=$1
 # 1.set $1/$searchDomain into github action env. not to type in 3 times while run scripts 3 way.
 # 2.test in action. [2022/01/01/23:18:26 CST]
 # 3.use color_print_fun.sh glabolly.
+# 4._domain_checkValid_ are in bug while program running, need to fix it.
 ##
 
 # judgement: while script file running:
@@ -72,7 +76,8 @@ searchDomain=$1
 # or:
 # check $searchDomain valid or not.
 
-if [ "$#" -eq 0 ] || _domain_checkValid_ ; then
+#if [ "$#" -eq 0 ] || _domain_checkValid_ ; then
+if [ "$#" -eq 0 ] ; then
     _telescope_usage_
     exit 0
 fi
