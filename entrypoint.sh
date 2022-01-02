@@ -40,7 +40,7 @@ function _discover_domainInfo_() {
     # echo $_show_
     echo "ready to scan."
     tar -zxvf nmap_bin.tar.gz
-    cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -sS -iL $searchDomain-output.txt -oX $searchDomain-output.xml
+    cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -sS -iL ../$searchDomain-output.txt -oX ../$searchDomain-output.xml
     #cat $searchDomain-output.xml
     echo "+----------------------------dmF END--------------------------------+"
 }
@@ -68,7 +68,7 @@ searchDomain=$1
 # 1.set $1/$searchDomain into github action env. not to type in 3 times while run scripts 3 way.
 # 2.test in action. [2022/01/01/23:18:26 CST]
 # 3.use color_print_fun.sh glabolly.
-# 4._domain_checkValid_ are in bug while program running, need to fix it.
+# 4.function _domain_checkValid_() are in bug while program running, need to fix it.
 ##
 
 # judgement: while script file running:
