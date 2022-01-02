@@ -34,15 +34,15 @@ jobs:
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
-          bash ./entrypoint.sh sentrylab.cn domains
+          bash ./entrypoint.sh coscoshipping.com domains
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
-          bash ./entrypoint.sh sentrylab.cn ports
+          bash ./entrypoint.sh coscoshipping.com ports
       - name: thirdly to run aq-bin screenshots
         run: |
           echo "test chrome bin files."
-          bash ./entrypoint.sh sentrylab.cn screens
+          bash ./entrypoint.sh coscoshipping.com screens
           echo "扫描完成，这里是附件" > result.html
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
