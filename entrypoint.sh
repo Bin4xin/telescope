@@ -31,7 +31,7 @@ function _gather_domains_() {
     python3 brutedns.py -s high -d $searchDomain -l 4
     sleep 1
     awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > $searchDomain-output.txt
-    cat $searchDomain-output.txt
+    ls -la $searchDomain-output.txt
     echo "+------------------------------dm end--------------------------------+"
 }
 
@@ -39,9 +39,9 @@ function _discover_domainInfo_() {
     echo "+-----------------------------dm INF--------------------------------+"
     # echo $_show_
     echo "ready to scan."
-    tar -zxvf nmap_bin.tar.gz
-    cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -sS -iL ../$searchDomain-output.txt -oX ../$searchDomain-output.xml
-    #cat $searchDomain-output.xml
+    tar -zxvf nmap_bin.tar.gz &>/dev/null
+    cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -v -sV -iL ../$searchDomain-output.txt -oX ../$searchDomain-output.xml
+    ls -la $searchDomain-output.xml
     echo "+----------------------------dmF END--------------------------------+"
 }
 
