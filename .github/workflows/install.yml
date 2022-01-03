@@ -58,6 +58,6 @@ jobs:
           to: bin4xin.sentrylab@qq.com
           #cc: chihou.pro@gmail.com
           #from: 哨兵 -  ${{ env.REPORT_COMMIT }}
-          from: 哨兵
+          from: 哨兵 - 望远镜
           content_type: text/html
           attachments: attachments.tar.gz
