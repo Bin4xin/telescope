@@ -9,6 +9,8 @@ on: [workflow_dispatch]
 jobs:
   install:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
     env:
       LSI: 'true'
     steps:
