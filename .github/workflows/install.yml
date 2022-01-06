@@ -61,8 +61,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          with:
-            fetch-depth: 0
+        with:
+          fetch-depth: 0
       - name: thirdly to run aq-bin screenshots
         run: |
           bash ./entrypoint.sh $Domain_Target screens
@@ -73,8 +73,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          with:
-            fetch-depth: 0
+        with:
+          fetch-depth: 0
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
         with:
