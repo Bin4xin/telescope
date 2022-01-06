@@ -1,4 +1,4 @@
-name: install test
+name: TELESCOPE WORKFLOW
 
 on: [workflow_dispatch]
 #on:
@@ -33,19 +33,41 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           echo "maybe there are some cache i found!"
+      - name: set up scan target
+        run: |
+          echo "Domain_Target: csleasing.com.cn" >> $GITHUB_ENV
+
+  Domain_Search:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
-          bash ./entrypoint.sh csleasing.com.cn domains
+          bash ./entrypoint.sh ${{env.Domain_Target}} domains
+
+  Domain_InfoScan:
+    needs: Domain_Search
+    runs-on: ubuntu-latest
+    steps:
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
-          bash ./entrypoint.sh csleasing.com.cn ports
+          bash ./entrypoint.sh ${{env.Domain_Target}} ports
+
+  Domain_ScreenshotsInfo:
+    needs: Domain_InfoScan
+    runs-on: ubuntu-latest
+    steps:
       - name: thirdly to run aq-bin screenshots
         run: |
-          echo "test chrome bin files."
-          bash ./entrypoint.sh csleasing.com.cn screens
+          bash ./entrypoint.sh ${{env.Domain_Target}} screens
           echo "扫描完成，这里是附件" > result.html
+
+  SendMails:
+    needs: Domain_ScreenshotsInfo
+    runs-on: ubuntu-latest
+    steps:
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
         with:
