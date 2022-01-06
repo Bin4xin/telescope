@@ -37,7 +37,7 @@ function _gather_domains_() {
 
 function _discover_domainInfo_() {
     echo "+-----------------------------dm INF--------------------------------+"
-    # echo $_show_
+    echo $_show_
     echo "ready to scan."
     tar -zxvf nmap_bin.tar.gz &>/dev/null
     cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -v -sV -iL ../$searchDomain-output.txt -oX ../$searchDomain-output.xml
@@ -55,13 +55,14 @@ function _aquatone_domainInfo_screens_(){
 
 function _telescope_usage_(){
 	echo "im thinking: im jump to telescope_usage func now."
+	exit 0
 }
 
 
 # define some glabol case.
-searchDomain=$1
+# searchDomain=$1
+_show_=$(pwd && ls -la)
 # done.
-#_show_=$(pwd && ls -la)
 
 ##
 # TODO:
@@ -83,7 +84,7 @@ if [ "$#" -eq 0 ] ; then
 fi
 
 # some cases to check what function to transfer.
-case $2 in
+case $1 in
     domains )
         _gather_domains_
         #echo "im in case: domains"

@@ -2,6 +2,10 @@ name: TELESCOPE WORKFLOW
 
 on: [workflow_dispatch]
 
+env:
+  searchDomain: 'csleasing.com.cn'  #set up scan target
+
+
 jobs:
   install:
     runs-on: ubuntu-latest
@@ -9,7 +13,6 @@ jobs:
       fail-fast: false
     env:
       LSI: 'true'
-      Domain_Target: 'csleasing.com.cn'  #set up scan target
     steps:
       - uses: actions/checkout@v2
         with:
@@ -42,7 +45,7 @@ jobs:
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
-          bash ./entrypoint.sh $Domain_Target domains
+          bash ./entrypoint.sh domains
 
   Domain_InfoScan:
     needs: Domain_Search
@@ -54,7 +57,7 @@ jobs:
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
-          bash ./entrypoint.sh $Domain_Target ports
+          bash ./entrypoint.sh ports
 
   Domain_ScreenshotsInfo:
     needs: Domain_InfoScan
@@ -65,7 +68,7 @@ jobs:
           fetch-depth: 0
       - name: thirdly to run aq-bin screenshots
         run: |
-          bash ./entrypoint.sh $Domain_Target screens
+          bash ./entrypoint.sh screens
           echo "扫描完成，这里是附件" > result.html
 
   SendMails:
