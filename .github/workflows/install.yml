@@ -38,6 +38,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
@@ -56,12 +57,12 @@ jobs:
           bash ./entrypoint.sh $Domain_Target ports
 
   Domain_ScreenshotsInfo:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
     needs: Domain_InfoScan
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
       - name: thirdly to run aq-bin screenshots
         run: |
           bash ./entrypoint.sh $Domain_Target screens
@@ -71,6 +72,9 @@ jobs:
     needs: Domain_ScreenshotsInfo
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
         with:
