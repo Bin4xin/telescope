@@ -35,7 +35,7 @@ jobs:
           echo "maybe there are some cache i found!"
       - name: set up scan target
         run: |
-          echo "Domain_Target: csleasing.com.cn" >> $GITHUB_ENV
+          echo "Domain_Target= csleasing.com.cn" >> $GITHUB_ENV
 
   Domain_Search:
     needs: install
