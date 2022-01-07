@@ -3,6 +3,9 @@
     author:yanxiu0614@gmail.com
     org:Monster Zero Team
 '''
+import gevent
+from gevent import monkey
+monkey.patch_all()
 import os
 import sys
 import time
@@ -13,20 +16,16 @@ from collections import Counter
 
 
 import argparse
-import gevent
 import dns.resolver
 
 from config import config
 from lib.IPy import IP
-from gevent import monkey
 
 if sys.version > '3':
     from queue import Queue, LifoQueue
 else:
     from Queue import Queue, LifoQueue
 
-
-monkey.patch_all()
 
 
 # import logging
@@ -50,7 +49,10 @@ class Brutedomain:
         self.level = args.level
         self.sub_dict = args.sub_file
         self.speed = args.speed
-        self.default_dns = True if args.default_dns is "y" else False
+        if args.default_dns == "y":
+            self.default_dns = True
+        else:
+            self.default_dns = False
         self.next_sub_dict = args.next_sub_file
         self.other_result = args.other_file
 
@@ -249,7 +251,7 @@ class Brutedomain:
     def query_domain(self, domain):
         list_ip, list_cname = [], []
         try:
-            record = self.resolver.query(domain)
+            record = self.resolver.resolve(domain)
             for A_CNAME in record.response.answer:
                 for item in A_CNAME.items:
                     if item.rdtype == self.get_type_id('A'):
