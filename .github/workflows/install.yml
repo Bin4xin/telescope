@@ -64,7 +64,8 @@ jobs:
           path: result
           key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('${{ env.searchDomain }}-output.txt') }}
           restore-keys: |
-            ${{ runner.os }}-result-${{ env.CACHE_ID }}-
+            ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
+
       - name: test cache
           #if: steps.cache.outputs.cache-hit != 'true'
           run: |
