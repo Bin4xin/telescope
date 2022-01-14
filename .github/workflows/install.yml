@@ -15,7 +15,6 @@ on:
 env:
   searchDomain: "${{ github.event.inputs.searchDomain }}"  #set up scan target
 
-
 jobs:
   install:
     runs-on: ubuntu-latest
@@ -50,12 +49,30 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: first to domain int
         run: |
           echo "here is function to detected domain from brupdns.py."
           bash ./entrypoint.sh domains
+      - name: depend domain-cache
+        id: cache
+        uses: actions/cache@v2
+        env:
+          CACHE_ID: 1
+        with:
+          path: result
+          key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('${{ env.searchDomain }}-output.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-result-${{ env.CACHE_ID }}-
+      - name: test cache
+          #if: steps.cache.outputs.cache-hit != 'true'
+          run: |
+            ls -la
+            ls -la result
+            echo "here is in action workflow task!"
+            cat ${{ env.searchDomain }}-output.txt
+            cat result/${{ env.searchDomain }}-output.txt
 
   Domain_InfoScan:
     needs: Domain_Search
@@ -75,7 +92,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - name: thirdly to run aq-bin screenshots
         run: |
           bash ./entrypoint.sh screens
@@ -87,7 +104,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@v3
         with:

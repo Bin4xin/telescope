@@ -11,6 +11,10 @@
   - [x] test in action. `[2022/01/01/23:18:26 CST]`
   - [ ] use color_print_fun.sh glabolly.
   - [ ]function `_domain_checkValid_()` are in bug while program running, need to fix it.
+  - [2022/01/06/21:39:27] 修复单个任务时间过长导致整个任务停止，将一个流程内的任务分成了多个；
+    - [2022/01/07/17:01:41] 导致单个任务中存在checkout后，重新拉去分支时，那么前一个任务生成的文件信息将无法同步；
+      - 尝试通过写入环境变量的形式读取；
+      - 尝试cache。
   - ...
 
 ## 贡献者

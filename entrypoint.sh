@@ -26,12 +26,13 @@ fi
 function _gather_domains_() {
     echo "+------------------------------domain--------------------------------+"
     echo $_show_
-    python3 -m pip install -r requirement.txt
+    #python3 -m pip install -r requirement.txt
     # start to collect clid domains.
-    python3 brutedns.py -s high -d $searchDomain -l 4
+    #python3 brutedns.py -s high -d $searchDomain -l 4
     sleep 1
-    awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > $searchDomain-output.txt
-    ls -la $searchDomain-output.txt
+    echo "benaxin.csleasing.com.cn" > $searchDomain-output.txt
+    #awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > $searchDomain-output.txt
+    #cat $searchDomain-output.txt
     echo "+------------------------------dm end--------------------------------+"
 }
 
