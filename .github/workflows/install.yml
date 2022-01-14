@@ -64,16 +64,16 @@ jobs:
           path: result
           key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('${{ env.searchDomain }}-output.txt') }}
           restore-keys: |
-            ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
+            ${{ runner.os }}-result-${{ env.CACHE_ID }}-
 
       - name: test cache
-          #if: steps.cache.outputs.cache-hit != 'true'
-          run: |
-            ls -la
-            ls -la result
-            echo "here is in action workflow task!"
-            cat ${{ env.searchDomain }}-output.txt
-            cat result/${{ env.searchDomain }}-output.txt
+        #if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          ls -la
+          ls -la result
+          echo "here is in action workflow task!"
+          cat ${{ env.searchDomain }}-output.txt
+          cat result/${{ env.searchDomain }}-output.txt
 
   Domain_InfoScan:
     needs: Domain_Search
