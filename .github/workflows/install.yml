@@ -73,7 +73,7 @@ jobs:
           ls -la result
           echo "here is in action workflow task!"
           cat ${{ env.searchDomain }}-output.txt
-          cat result/${{ env.searchDomain }}-output.txt
+          #cat result/${{ env.searchDomain }}-output.txt
 
   Domain_InfoScan:
     needs: Domain_Search
@@ -85,7 +85,10 @@ jobs:
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
-          bash ./entrypoint.sh ports
+          ls -la
+          ls -la result
+          cat ${{ env.searchDomain }}-output.txt
+          #bash ./entrypoint.sh ports
 
   Domain_ScreenshotsInfo:
     needs: Domain_InfoScan
