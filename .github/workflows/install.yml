@@ -73,7 +73,7 @@ jobs:
           ls -la
           ls -la result
           echo "here is in action workflow task!"
-          cat ${{ env.searchDomain }}-output.txt
+          cat result/${{ env.searchDomain }}-output.txt
           #cat result/${{ env.searchDomain }}-output.txt
 
   Domain_InfoScan:
@@ -88,7 +88,7 @@ jobs:
           echo "ready to scan."
           ls -la
           ls -la result
-          cat ${{ env.searchDomain }}-output.txt
+          cat result/${{ env.searchDomain }}-output.txt
           #bash ./entrypoint.sh ports
 
   Domain_ScreenshotsInfo:
