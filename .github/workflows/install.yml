@@ -60,10 +60,10 @@ jobs:
         id: cache
         uses: actions/cache@v2
         env:
-          CACHE_ID: 1
+          CACHE_ID: ${{ env.searchDomain }}
         with:
           path: result
-          key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('${{ env.searchDomain }}-output.txt') }}
+          key: ${{ runner.os }}-result-${{ env.CACHE_ID }}-
           restore-keys: |
             ${{ runner.os }}-result-${{ env.CACHE_ID }}-
 
