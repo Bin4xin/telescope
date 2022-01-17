@@ -91,6 +91,18 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
+
+      - name: domain-cache-file-find
+        id: cache
+        uses: actions/cache@v2
+        env:
+          CACHE_ID: ${{ env.searchDomain }}
+        with:
+          path: result
+          key: ${{ runner.os }}-result-${{ env.CACHE_ID }}-
+          restore-keys: |
+            ${{ runner.os }}-result-
+
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
