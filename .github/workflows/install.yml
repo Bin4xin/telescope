@@ -4,17 +4,16 @@ on:
   push:
     branches: [ main ]
 #  推送测试选择，完成后使用如下：
-#  workflow_dispatch:
-#    inputs:
-#      searchDomain:
-#        description: "Please enter the domain name to be scanned"
-#        required: true
-#        default: "csleasing.com.cn"
-
-      #Nmap_Parameter:
-        #description: "Custom parameter information scanned by nmap. The format when scanning is: nmap <custom parameter> -iL xxx.txt -oX xxx.xml"
-        #required: true
-        #default: "-p- -v -sV"
+#    workflow_dispatch:
+#      inputs:
+#        searchDomain:
+#          description: "Please enter the domain name to be scanned"
+#          required: true
+#          default: "csleasing.com.cn"
+#        Nmap_Parameter:
+#          description: "Custom parameter information scanned by nmap. The format when scanning is: nmap <custom parameter> -iL xxx.txt -oX xxx.xml"
+#          required: true
+#          default: "-p- -v -sV"
 
 env:
   searchDomain: "sentrylab.cn"
@@ -102,6 +101,9 @@ jobs:
           ls -la result/${{ env.searchDomain }}-output.txt
           bash ./entrypoint.sh ports
           ls -la result/${{ env.searchDomain }}-output.xml
+          cat result/${{ env.searchDomain }}-output.txt
+          cat result/${{ env.searchDomain }}-output.xml
+
 
   Domain_ScreenshotsInfo:
     needs: Domain_InfoScan
@@ -124,6 +126,8 @@ jobs:
 
       - name: thirdly to run aq-bin screenshots
         run: |
+          cat result/${{ env.searchDomain }}-output.txt
+          cat result/${{ env.searchDomain }}-output.xml
           ls -la result/${{ env.searchDomain }}-output.txt
           ls -la result/${{ env.searchDomain }}-output.xml
           bash ./entrypoint.sh screens
