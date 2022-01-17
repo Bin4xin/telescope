@@ -26,14 +26,10 @@ fi
 function _gather_domains_() {
     echo "+------------------------------domain--------------------------------+"
     echo $_show_
-    #python3 -m pip install -r requirement.txt
     # start to collect clid domains.
-    #python3 brutedns.py -s high -d $searchDomain -l 4
+    python3 brutedns.py -s high -d $searchDomain -l 4
     sleep 1
-    echo "benaxin.csleasing.com.cn" > /tmp/$searchDomain-output.txt
-    echo "benaxin.csleasing.com.cn" > result/$searchDomain-output.txt
-    #awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > $searchDomain-output.txt
-    #cat $searchDomain-output.txt
+    awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > result/$searchDomain-output.txt
     echo "+------------------------------dm end--------------------------------+"
 }
 
@@ -43,20 +39,17 @@ function _discover_domainInfo_() {
     echo "ready to scan."
     tar -zxvf nmap_bin.tar.gz &>/dev/null
     cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -v -sV -iL ../result/$searchDomain-output.txt -oX ../result/$searchDomain-output.xml
-    ls -la $searchDomain-output.xml
     echo "+----------------------------dmF END--------------------------------+"
 }
 
 function _aquatone_domainInfo_screens_(){
     chmod +x 7zzs && ./7zzs x chrome-linux.7z &>/dev/null
-    #tar -zxvf chrome-linux.tar.gz
-    #ls -la chrome-linux
     chmod +x chrome-linux/chrome && file chrome-linux/chrome
     cat result/$searchDomain-output.xml | ./aquatone/aquatone -chrome-path chrome-linux/chrome -nmap -out result/$searchDomain-html-output && tar -czf $searchDomain-attachments.tar.gz result/$searchDomain-html-output
 }
 
 function _telescope_usage_(){
-	echo "im thinking: im jump to telescope_usage func now."
+	echo "I am thinking: im jump to telescope_usage func now."
 	exit 0
 }
 
