@@ -39,7 +39,7 @@ function _discover_domainInfo_() {
     echo $_show_
     echo "ready to scan."
     tar -zxvf nmap_bin.tar.gz &>/dev/null
-    cd nmap_bin && chmod +x script.sh && ./script.sh nmap -p- -v -sV -iL ../result/$searchDomain-output.txt -oX ../result/$searchDomain-output.xml
+    chmod +x nmap_bin/script.sh && ./nmap_bin/script.sh nmap_bin/nmap -p- -v -sV -iL result/$searchDomain-output.txt -oX result/$searchDomain-output.xml
     echo "+----------------------------dmF END--------------------------------+"
 }
 

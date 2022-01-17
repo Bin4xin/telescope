@@ -99,7 +99,9 @@ jobs:
       - name: sencond to scan domains ports
         run: |
           echo "ready to scan."
+          ls -la result/${{ env.searchDomain }}-output.txt
           bash ./entrypoint.sh ports
+          ls -la result/${{ env.searchDomain }}-output.xml
 
   Domain_ScreenshotsInfo:
     needs: Domain_InfoScan
@@ -122,6 +124,8 @@ jobs:
 
       - name: thirdly to run aq-bin screenshots
         run: |
+          ls -la result/${{ env.searchDomain }}-output.txt
+          ls -la result/${{ env.searchDomain }}-output.xml
           bash ./entrypoint.sh screens
           echo "扫描完成，这里是附件" > result.html
 
