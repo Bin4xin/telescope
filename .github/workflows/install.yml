@@ -43,7 +43,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-${{ env.CACHE_ID }}-
             ${{ runner.os }}-pip-
-
+      ##
+      # cache in action: 成功跨任务访问相关文件，但无法在同一个任务内访问其他cache
+      # 比如：同一个任务内若需要文件缓存和依赖缓存（像pip、ruby等依赖缓存时就会冲突；）
+      ##
       - name: download and env cache
         if: steps.cache.outputs.cache-hit != 'true'
         run: |

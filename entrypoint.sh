@@ -27,6 +27,7 @@ function _gather_domains_() {
     echo "+------------------------------domain--------------------------------+"
     echo $_show_
     # start to collect clid domains.
+    python3 -m pip install -r requirement.txt
     python3 brutedns.py -s high -d $searchDomain -l 4
     sleep 1
     awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > result/$searchDomain-output.txt
@@ -59,13 +60,16 @@ function _telescope_usage_(){
 _show_=$(pwd && ls -la)
 # done.
 
-##
+#####
 # TODO:
 # 1.set $1/$searchDomain into github action env. not to type in 3 times while run scripts 3 way.
 # 2.test in action. [2022/01/01/23:18:26 CST]
 # 3.use color_print_fun.sh glabolly.
 # 4.function _domain_checkValid_() are in bug while program running, need to fix it.
 ##
+# cache in action: 成功跨任务访问相关文件，但无法在同一个任务内访问其他cache
+# 比如：同一个任务内若需要文件缓存和依赖缓存（像pip、ruby等依赖缓存时就会冲突；）
+#####
 
 # judgement: while script file running:
 # check input paragram is null or not;
