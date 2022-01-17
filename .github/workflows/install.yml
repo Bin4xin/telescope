@@ -17,7 +17,7 @@ on:
         #default: "-p- -v -sV"
 
 env:
-  searchDomain: "csleasing.com.cn"
+  searchDomain: "sentrylab.cn"
   #searchDomain: "${{ github.event.inputs.searchDomain }}"  #set up scan target
 
 jobs:
