@@ -72,6 +72,7 @@ jobs:
         run: |
           ls -la
           ls -la result
+          ls -la /tmp
           echo "here is in action workflow task!"
           cat result/${{ env.searchDomain }}-output.txt
           #cat result/${{ env.searchDomain }}-output.txt
@@ -88,6 +89,7 @@ jobs:
           echo "ready to scan."
           ls -la
           ls -la result
+          ls -la /tmp
           cat result/${{ env.searchDomain }}-output.txt
           #bash ./entrypoint.sh ports
 
