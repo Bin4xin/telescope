@@ -31,6 +31,7 @@ function _gather_domains_() {
     #python3 brutedns.py -s high -d $searchDomain -l 4
     sleep 1
     echo "benaxin.csleasing.com.cn" > /tmp/$searchDomain-output.txt
+    echo "benaxin.csleasing.com.cn" > result/$searchDomain-output.txt
     #awk -F"," 'NR == 1 {next} {print $1}' result/$searchDomain/$searchDomain.csv > $searchDomain-output.txt
     #cat $searchDomain-output.txt
     echo "+------------------------------dm end--------------------------------+"

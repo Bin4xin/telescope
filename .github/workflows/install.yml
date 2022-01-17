@@ -1,19 +1,24 @@
 name: TELESCOPE WORKFLOW
 
 on:
-  workflow_dispatch:
-    inputs:
-      searchDomain:
-        description: "Please enter the domain name to be scanned"
-        required: true
-        default: "csleasing.com.cn"
+  push:
+    branches: [ main ]
+#  推送测试选择，完成后使用如下：
+#  workflow_dispatch:
+#    inputs:
+#      searchDomain:
+#        description: "Please enter the domain name to be scanned"
+#        required: true
+#        default: "csleasing.com.cn"
+
       #Nmap_Parameter:
         #description: "Custom parameter information scanned by nmap. The format when scanning is: nmap <custom parameter> -iL xxx.txt -oX xxx.xml"
         #required: true
         #default: "-p- -v -sV"
 
 env:
-  searchDomain: "${{ github.event.inputs.searchDomain }}"  #set up scan target
+  searchDomain: "csleasing.com.cn"
+  #searchDomain: "${{ github.event.inputs.searchDomain }}"  #set up scan target
 
 jobs:
   install:
@@ -33,15 +38,17 @@ jobs:
         env:
           CACHE_ID: 1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-depend-${{ env.CACHE_ID }}-${{ hashFiles('requirement.txt') }}
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ env.CACHE_ID }}-${{ hashFiles('requirement.txt') }}
           restore-keys: |
-            ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
+            ${{ runner.os }}-pip-${{ env.CACHE_ID }}-
+            ${{ runner.os }}-pip-
 
       - name: download and install
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           echo "maybe there are some cache i found!"
+          python3 -m pip install -r requirement.txt
 
   Domain_Search:
     needs: install
@@ -65,7 +72,7 @@ jobs:
           path: result
           key: ${{ runner.os }}-result-${{ env.CACHE_ID }}-
           restore-keys: |
-            ${{ runner.os }}-result-${{ env.CACHE_ID }}-
+            ${{ runner.os }}-result-
 
       - name: test cache
         #if: steps.cache.outputs.cache-hit != 'true'
